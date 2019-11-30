@@ -1,0 +1,9 @@
+[submodule "generic-attack-stix"]
+	path = generic-attack-stix
+	url = https://github.com/apowers313/generic-attack-stix
+[submodule "generic-attack-website"]
+	path = generic-attack-website
+	url = https://github.com/apowers313/generic-attack-website
+[submodule "generic-attack-navigator"]
+	path = generic-attack-navigator
+	url = https://github.com/apowers313/generic-attack-navigator
