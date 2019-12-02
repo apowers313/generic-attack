@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+        <!-- insert analytics here-->
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel='shortcut icon' href='https://apowers313.github.io/generic-attack/theme/favicon.ico' type='image/x-icon'>
+        <title>Exfiltration - Mobile | MITRE ATT&CK&trade;</title>
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='https://apowers313.github.io/generic-attack/theme/style/bootstrap.min.css' />
+        <link rel='stylesheet' href='https://apowers313.github.io/generic-attack/theme/style/bootstrap-glyphicon.min.css' />
+        <link rel="stylesheet" type="text/css" href="https://apowers313.github.io/generic-attack/theme/style.min.css?8cde5623">
+</head>
+
+<body>
+<!--stopindex-->
+<header>
+    
+        <nav class='navbar navbar-expand-lg navbar-dark fixed-top'>
+            <a class='navbar-brand' href='https://apowers313.github.io/generic-attack/'><img src="https://apowers313.github.io/generic-attack/theme/images/attack.png" height="50px"/></a>
+            <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse'
+                    aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+                <span class='navbar-toggler-icon' onclick="search('')"></span>
+            </button>
+            <div class='collapse navbar-collapse' id='navbarCollapse'>
+                <ul class='nav nav-tabs ml-auto'>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/matrices/"  class="nav-link" ><b>Matrices</b></a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/tactics/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Tactics</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/pre">PRE-ATT&CK</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/techniques/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Techniques</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/pre">PRE-ATT&CK</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/mitigations/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Mitigations</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/groups/"  class="nav-link" ><b>Groups</b></a></li>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/software/"  class="nav-link" ><b>Software</b></a></li>
+                </ul>
+                <ul class='navbar-nav flex-row d-md-flex float-right'>
+                    <li>
+                        <form class='form-inline pl-2'>
+                            <input class='form-control' type='text' placeholder='Search site' aria-label='Search' id="search"
+                                   autocomplete="off">
+                        </form>
+                        <div class="search-results"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+        <!-- don't edit or remove the line below even though it's commented out, it gets parsed and replaced by the previous-versions feature -->
+        <!-- !previous versions banner! -->
+        <!--startindex-->
+<div id='content'>    <div class='container-fluid'>
+        <div class='row'>
+ 
+             
+            <div class="nav flex-column col-xl-2 col-lg-3 col-md-3  sidebar nav pt-5 pb-3 pl-3 border-right" id="v-tab" role="tablist" aria-orientation="vertical">
+<!--stopindex-->
+        <button class="btn btn-default dropdown-toggle heading-dropdown mb-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MOBILE</button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/enterprise">ENTERPRISE</a>
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/mobile">MOBILE</a>
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/example">EXAMPLE</a>
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/pre">PRE-ATT&CK</a>
+    </div>
+    <div class="group-nav-desktop-view">
+        <span class="heading" id="v-home-tab" aria-selected="false">TACTICS</span>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="0-0">
+                <a href="https://apowers313.github.io/generic-attack/tactics/mobile/">Overview</a>
+            </div>
+</div>
+
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Initial Access-Initial Access">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0027/">Initial Access</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Persistence-Persistence">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0028/">Persistence</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Privilege Escalation-Privilege Escalation">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0029/">Privilege Escalation</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Defense Evasion-Defense Evasion">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0030/">Defense Evasion</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Credential Access-Credential Access">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0031/">Credential Access</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Discovery-Discovery">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0032/">Discovery</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Lateral Movement-Lateral Movement">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0033/">Lateral Movement</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Impact-Impact">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0034/">Impact</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Collection-Collection">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0035/">Collection</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head active" id="Exfiltration-Exfiltration">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0036/">Exfiltration</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Command and Control-Command and Control">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0037/">Command and Control</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Network Effects-Network Effects">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0038/">Network Effects</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Remote Service Effects-Remote Service Effects">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0039/">Remote Service Effects</a>
+            </div>
+</div>
+
+
+    </div>
+<!--startindex-->
+            </div>
+             
+            <div class="tab-content col-xl-10 col-lg-9 col-md-9 pt-4" id="v-tabContent">
+                <div class="tab-pane fade show active" id="v-attckmatrix" role="tabpanel" aria-labelledby="v-attckmatrix-tab">
+    
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/">Home</a></li>
+            <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/tactics/mobile">Tactics</a></li>
+            <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/tactics/mobile">Mobile</a></li>
+        <li class="breadcrumb-item">Exfiltration</li>
+    </ol>
+    <div class="tab-pane fade show active" id="v-" role="tabpanel" aria-labelledby="v--tab"></div>
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container-fluid">
+                    <h1>
+                        Exfiltration
+                    </h1>
+                    <div class="row">
+                        <div class="col-md-8 description-body">
+                            <p>Exfiltration refers to techniques and attributes that result or aid in the adversary removing files and information from the targeted mobile device.</p>
+<p>In the mobile environment, mobile devices are frequently connected to networks outside enterprise control such as cellular networks or public Wi-Fi networks. Adversaries could attempt to evade detection by communicating on these networks, and potentially even by using non-Internet Protocol mechanisms such as Short Message Service (SMS). However, cellular networks often have data caps and/or extra data charges that could increase the potential for adversarial communication to be detected.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-data"><span class="h5 card-title">ID:</span> TA0036</div>                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="pt-3" id ="techniques">Techniques</h2><h6 class="table-object-count">Techniques: 4</h6>
+                    <table class="table table-bordered table-alternate mt-2">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Alternate Network Mediums-exfiltration-tab" href="https://apowers313.github.io/generic-attack/techniques/T1438"> T1438 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Alternate Network Mediums-exfiltration-tab" href="https://apowers313.github.io/generic-attack/techniques/T1438"> Alternate Network Mediums </a>
+                                    </td>
+                                    <td>
+                                        <p>Adversaries can communicate using cellular networks rather than enterprise Wi-Fi in order to bypass enterprise network monitoring systems. Adversaries may also communicate using other non-Internet Protocol mediums such as SMS, NFC, or Bluetooth to bypass network monitoring systems.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Commonly Used Port-exfiltration-tab" href="https://apowers313.github.io/generic-attack/techniques/T1436"> T1436 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Commonly Used Port-exfiltration-tab" href="https://apowers313.github.io/generic-attack/techniques/T1436"> Commonly Used Port </a>
+                                    </td>
+                                    <td>
+                                        <p>Adversaries may communicate over a commonly used port to bypass firewalls or network detection systems and to blend with normal network activity to avoid more detailed inspection. </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Data Encrypted-exfiltration-tab" href="https://apowers313.github.io/generic-attack/techniques/T1532"> T1532 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Data Encrypted-exfiltration-tab" href="https://apowers313.github.io/generic-attack/techniques/T1532"> Data Encrypted </a>
+                                    </td>
+                                    <td>
+                                        <p>Data is encrypted before being exfiltrated in order to hide the information that is being exfiltrated from detection or to make the exfiltration less conspicuous upon inspection by a defender. The encryption is performed by a utility, programming library, or custom algorithm on the data itself and is considered separate from any encryption performed by the command and control or file transfer protocol. Common file formats that can encrypt files are RAR and zip.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Standard Application Layer Protocol-exfiltration-tab" href="https://apowers313.github.io/generic-attack/techniques/T1437"> T1437 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Standard Application Layer Protocol-exfiltration-tab" href="https://apowers313.github.io/generic-attack/techniques/T1437"> Standard Application Layer Protocol </a>
+                                    </td>
+                                    <td>
+                                        <p>Adversaries may communicate using a common, standardized application layer protocol such as HTTP, HTTPS, SMTP, or DNS to avoid detection by blending in with existing traffic.</p>
+                                    </td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+                </div>
+            </div>
+        </div>  
+    </div>
+</div>
+<!--stopindex-->
+<footer class="footer p-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 col-sm-4 col-md-3">  
+                <div class="footer-center-responsive my-auto">
+                    <a href="https://www.mitre.org" target="_blank" rel="noopener" aria-label="MITRE">
+                        <img src="https://apowers313.github.io/generic-attack/theme/images/attackwhiteontrans.gif" class="mitre-logo-wtrans">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2 col-sm-2 footer-responsive-break"></div>
+            <div class="col-6 col-sm-6 text-center">  
+                <p>
+                    blah blah copyright blah.
+                </p>
+                <div class="row">
+                    <div class="col text-right">
+                        <small>
+                            <a href="https://apowers313.github.io/generic-attack/resources/privacy" class="footer-link">Privacy Policy</a>
+                        </small>
+                    </div>
+                    <div class="col text-left">
+                        <small>
+                            <a href="https://apowers313.github.io/generic-attack/resources/terms-of-use" class="footer-link">Terms of Use</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 p-2 footer-responsive-break"></div>
+            <div class="col">
+                <div class="footer-float-right-responsive">
+                    <div class="mb-1">
+                        <a href="https://twitter.com/MITREattack" class="btn btn-primary w-100">
+                            <!-- <i class="fa fa-twitter"></i> -->
+                            <b>BUTTON!</b>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="https://apowers313.github.io/generic-attack/contact" class="btn btn-primary w-100">
+                            <b>BUTTON 2!</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+        <!--SCRIPTS-->
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/jquery-3.2.1.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/popper.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/bootstrap.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/site.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/lunr-2.3.3.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/search.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/index.js"></script>
+
+    <!--SCRIPTS-->
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/navigation.js"></script>
+</body>
+
+</html>
+<!--startindex-->

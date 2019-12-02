@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+        <!-- insert analytics here-->
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel='shortcut icon' href='https://apowers313.github.io/generic-attack/theme/favicon.ico' type='image/x-icon'>
+        <title>Impact - Enterprise | MITRE ATT&CK&trade;</title>
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='https://apowers313.github.io/generic-attack/theme/style/bootstrap.min.css' />
+        <link rel='stylesheet' href='https://apowers313.github.io/generic-attack/theme/style/bootstrap-glyphicon.min.css' />
+        <link rel="stylesheet" type="text/css" href="https://apowers313.github.io/generic-attack/theme/style.min.css?8cde5623">
+</head>
+
+<body>
+<!--stopindex-->
+<header>
+    
+        <nav class='navbar navbar-expand-lg navbar-dark fixed-top'>
+            <a class='navbar-brand' href='https://apowers313.github.io/generic-attack/'><img src="https://apowers313.github.io/generic-attack/theme/images/attack.png" height="50px"/></a>
+            <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse'
+                    aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+                <span class='navbar-toggler-icon' onclick="search('')"></span>
+            </button>
+            <div class='collapse navbar-collapse' id='navbarCollapse'>
+                <ul class='nav nav-tabs ml-auto'>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/matrices/"  class="nav-link" ><b>Matrices</b></a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/tactics/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Tactics</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/pre">PRE-ATT&CK</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/techniques/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Techniques</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/pre">PRE-ATT&CK</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/mitigations/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Mitigations</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/groups/"  class="nav-link" ><b>Groups</b></a></li>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/software/"  class="nav-link" ><b>Software</b></a></li>
+                </ul>
+                <ul class='navbar-nav flex-row d-md-flex float-right'>
+                    <li>
+                        <form class='form-inline pl-2'>
+                            <input class='form-control' type='text' placeholder='Search site' aria-label='Search' id="search"
+                                   autocomplete="off">
+                        </form>
+                        <div class="search-results"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+        <!-- don't edit or remove the line below even though it's commented out, it gets parsed and replaced by the previous-versions feature -->
+        <!-- !previous versions banner! -->
+        <!--startindex-->
+<div id='content'>    <div class='container-fluid'>
+        <div class='row'>
+ 
+             
+            <div class="nav flex-column col-xl-2 col-lg-3 col-md-3  sidebar nav pt-5 pb-3 pl-3 border-right" id="v-tab" role="tablist" aria-orientation="vertical">
+<!--stopindex-->
+        <button class="btn btn-default dropdown-toggle heading-dropdown mb-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ENTERPRISE</button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/enterprise">ENTERPRISE</a>
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/mobile">MOBILE</a>
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/example">EXAMPLE</a>
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/pre">PRE-ATT&CK</a>
+    </div>
+    <div class="group-nav-desktop-view">
+        <span class="heading" id="v-home-tab" aria-selected="false">TACTICS</span>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="0-0">
+                <a href="https://apowers313.github.io/generic-attack/tactics/enterprise/">Overview</a>
+            </div>
+</div>
+
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Initial Access-Initial Access">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0001/">Initial Access</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Execution-Execution">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0002/">Execution</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Persistence-Persistence">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0003/">Persistence</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Privilege Escalation-Privilege Escalation">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0004/">Privilege Escalation</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Defense Evasion-Defense Evasion">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0005/">Defense Evasion</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Credential Access-Credential Access">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0006/">Credential Access</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Discovery-Discovery">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0007/">Discovery</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Lateral Movement-Lateral Movement">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0008/">Lateral Movement</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Collection-Collection">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0009/">Collection</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Command and Control-Command and Control">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0011/">Command and Control</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Exfiltration-Exfiltration">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0010/">Exfiltration</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head active" id="Impact-Impact">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0040/">Impact</a>
+            </div>
+</div>
+
+
+    </div>
+<!--startindex-->
+            </div>
+             
+            <div class="tab-content col-xl-10 col-lg-9 col-md-9 pt-4" id="v-tabContent">
+                <div class="tab-pane fade show active" id="v-attckmatrix" role="tabpanel" aria-labelledby="v-attckmatrix-tab">
+    
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/">Home</a></li>
+            <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/tactics/enterprise">Tactics</a></li>
+            <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/tactics/enterprise">Enterprise</a></li>
+        <li class="breadcrumb-item">Impact</li>
+    </ol>
+    <div class="tab-pane fade show active" id="v-" role="tabpanel" aria-labelledby="v--tab"></div>
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container-fluid">
+                    <h1>
+                        Impact
+                    </h1>
+                    <div class="row">
+                        <div class="col-md-8 description-body">
+                            <p>The adversary is trying to manipulate, interrupt, or destroy your systems and data.</p>
+<p>Impact consists of techniques that adversaries use to disrupt availability or compromise integrity by manipulating business and operational processes. Techniques used for impact can include destroying or tampering with data. In some cases, business processes can look fine, but may have been altered to benefit the adversaries’ goals. These techniques might be used by adversaries to follow through on their end goal or to provide cover for a confidentiality breach.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-data"><span class="h5 card-title">ID:</span> TA0040</div>                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="pt-3" id ="techniques">Techniques</h2><h6 class="table-object-count">Techniques: 16</h6>
+                    <table class="table table-bordered table-alternate mt-2">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Account Access Removal-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1531"> T1531 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Account Access Removal-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1531"> Account Access Removal </a>
+                                    </td>
+                                    <td>
+                                        <p>Adversaries may interrupt availability of system and network resources by inhibiting access to accounts utilized by legitimate users. Accounts may be deleted, locked, or manipulated (ex: changed credentials) to remove access to accounts.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Data Destruction-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1485"> T1485 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Data Destruction-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1485"> Data Destruction </a>
+                                    </td>
+                                    <td>
+                                        <p>Adversaries may destroy data and files on specific systems or in large numbers on a network to interrupt availability to systems, services, and network resources. Data destruction is likely to render stored data irrecoverable by forensic techniques through overwriting files or data on local and remote drives. Common operating system file deletion commands such as <code>del</code> and <code>rm</code> often only remove pointers to files without wiping the contents of the files themselves, making the files recoverable by proper forensic methodology. This behavior is distinct from <a href="/techniques/T1488">Disk Content Wipe</a> and <a href="/techniques/T1487">Disk Structure Wipe</a> because individual files are destroyed rather than sections of a storage disk or the disk's logical structure.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Data Encrypted for Impact-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1486"> T1486 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Data Encrypted for Impact-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1486"> Data Encrypted for Impact </a>
+                                    </td>
+                                    <td>
+                                        <p>Adversaries may encrypt data on target systems or on large numbers of systems in a network to interrupt availability to system and network resources. They can attempt to render stored data inaccessible by encrypting files or data on local and remote drives and withholding access to a decryption key. This may be done in order to extract monetary compensation from a victim in exchange for decryption or a decryption key (ransomware) or to render data permanently inaccessible in cases where the key is not saved or transmitted. In the case of ransomware, it is typical that common user files like Office documents, PDFs, images, videos, audio, text, and source code files will be encrypted. In some cases, adversaries may encrypt critical system files, disk partitions, and the MBR.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Defacement-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1491"> T1491 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Defacement-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1491"> Defacement </a>
+                                    </td>
+                                    <td>
+                                        <p>Adversaries may modify visual content available internally or externally to an enterprise network. Reasons for Defacement include delivering messaging, intimidation, or claiming (possibly false) credit for an intrusion. </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Disk Content Wipe-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1488"> T1488 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Disk Content Wipe-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1488"> Disk Content Wipe </a>
+                                    </td>
+                                    <td>
+                                        <p>Adversaries may erase the contents of storage devices on specific systems as well as large numbers of systems in a network to interrupt availability to system and network resources.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Disk Structure Wipe-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1487"> T1487 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Disk Structure Wipe-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1487"> Disk Structure Wipe </a>
+                                    </td>
+                                    <td>
+                                        <p>Adversaries may corrupt or wipe the disk data structures on hard drive necessary to boot systems; targeting specific critical systems as well as a large number of systems in a network to interrupt availability to system and network resources. </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Endpoint Denial of Service-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1499"> T1499 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Endpoint Denial of Service-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1499"> Endpoint Denial of Service </a>
+                                    </td>
+                                    <td>
+                                        <p>Adversaries may perform Endpoint Denial of Service (DoS) attacks to degrade or block the availability of services to users. Endpoint DoS can be performed by exhausting the system resources those services are hosted on or exploiting the system to cause a persistent crash condition. Example services include websites, email services, DNS, and web-based applications. Adversaries have been observed conducting DoS attacks for political purposes and to support other malicious activities, including distraction, hacktivism, and extortion.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Firmware Corruption-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1495"> T1495 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Firmware Corruption-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1495"> Firmware Corruption </a>
+                                    </td>
+                                    <td>
+                                        <p>Adversaries may overwrite or corrupt the flash memory contents of system BIOS or other firmware in devices attached to a system in order to render them inoperable or unable to boot. Firmware is software that is loaded and executed from non-volatile memory on hardware devices in order to initialize and manage device functionality. These devices could include the motherboard, hard drive, or video cards.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Inhibit System Recovery-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1490"> T1490 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Inhibit System Recovery-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1490"> Inhibit System Recovery </a>
+                                    </td>
+                                    <td>
+                                        <p>Adversaries may delete or remove built-in operating system data and turn off services designed to aid in the recovery of a corrupted system to prevent recovery. Operating systems may contain features that can help fix corrupted systems, such as a backup catalog, volume shadow copies, and automatic repair features. Adversaries may disable or delete system recovery features to augment the effects of <a href="/techniques/T1485">Data Destruction</a> and <a href="/techniques/T1486">Data Encrypted for Impact</a>.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Network Denial of Service-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1498"> T1498 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Network Denial of Service-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1498"> Network Denial of Service </a>
+                                    </td>
+                                    <td>
+                                        <p>Adversaries may perform Network Denial of Service (DoS) attacks to degrade or block the availability of targeted resources to users. Network DoS can be performed by exhausting the network bandwidth services rely on. Example resources include specific websites, email services, DNS, and web-based applications. Adversaries have been observed conducting network DoS attacks for political purposes and to support other malicious activities, including distraction, hacktivism, and extortion.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Resource Hijacking-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1496"> T1496 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Resource Hijacking-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1496"> Resource Hijacking </a>
+                                    </td>
+                                    <td>
+                                        <p>Adversaries may leverage the resources of co-opted systems in order to solve resource intensive problems which may impact system and/or hosted service availability. </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Runtime Data Manipulation-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1494"> T1494 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Runtime Data Manipulation-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1494"> Runtime Data Manipulation </a>
+                                    </td>
+                                    <td>
+                                        <p>Adversaries may modify systems in order to manipulate the data as it is accessed and displayed to an end user. By manipulating runtime data, adversaries may attempt to affect a business process, organizational understanding, and decision making. </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Service Stop-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1489"> T1489 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Service Stop-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1489"> Service Stop </a>
+                                    </td>
+                                    <td>
+                                        <p>Adversaries may stop or disable services on a system to render those services unavailable to legitimate users. Stopping critical services can inhibit or stop response to an incident or aid in the adversary's overall objectives to cause damage to the environment. </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Stored Data Manipulation-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1492"> T1492 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Stored Data Manipulation-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1492"> Stored Data Manipulation </a>
+                                    </td>
+                                    <td>
+                                        <p>Adversaries may insert, delete, or manipulate data at rest in order to manipulate external outcomes or hide activity. By manipulating stored data, adversaries may attempt to affect a business process, organizational understanding, and decision making. </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-System Shutdown/Reboot-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1529"> T1529 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-System Shutdown/Reboot-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1529"> System Shutdown/Reboot </a>
+                                    </td>
+                                    <td>
+                                        <p>Adversaries may shutdown/reboot systems to interrupt access to, or aid in the destruction of, those systems. Operating systems may contain commands to initiate a shutdown/reboot of a machine. In some cases, these commands may also be used to initiate a shutdown/reboot of a remote computer. Shutting down or rebooting systems may disrupt access to computer resources for legitimate users.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Transmitted Data Manipulation-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1493"> T1493 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Transmitted Data Manipulation-impact-tab" href="https://apowers313.github.io/generic-attack/techniques/T1493"> Transmitted Data Manipulation </a>
+                                    </td>
+                                    <td>
+                                        <p>Adversaries may alter data en route to storage or other systems in order to manipulate external outcomes or hide activity. By manipulating transmitted data, adversaries may attempt to affect a business process, organizational understanding, and decision making. </p>
+                                    </td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+                </div>
+            </div>
+        </div>  
+    </div>
+</div>
+<!--stopindex-->
+<footer class="footer p-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 col-sm-4 col-md-3">  
+                <div class="footer-center-responsive my-auto">
+                    <a href="https://www.mitre.org" target="_blank" rel="noopener" aria-label="MITRE">
+                        <img src="https://apowers313.github.io/generic-attack/theme/images/attackwhiteontrans.gif" class="mitre-logo-wtrans">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2 col-sm-2 footer-responsive-break"></div>
+            <div class="col-6 col-sm-6 text-center">  
+                <p>
+                    blah blah copyright blah.
+                </p>
+                <div class="row">
+                    <div class="col text-right">
+                        <small>
+                            <a href="https://apowers313.github.io/generic-attack/resources/privacy" class="footer-link">Privacy Policy</a>
+                        </small>
+                    </div>
+                    <div class="col text-left">
+                        <small>
+                            <a href="https://apowers313.github.io/generic-attack/resources/terms-of-use" class="footer-link">Terms of Use</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 p-2 footer-responsive-break"></div>
+            <div class="col">
+                <div class="footer-float-right-responsive">
+                    <div class="mb-1">
+                        <a href="https://twitter.com/MITREattack" class="btn btn-primary w-100">
+                            <!-- <i class="fa fa-twitter"></i> -->
+                            <b>BUTTON!</b>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="https://apowers313.github.io/generic-attack/contact" class="btn btn-primary w-100">
+                            <b>BUTTON 2!</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+        <!--SCRIPTS-->
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/jquery-3.2.1.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/popper.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/bootstrap.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/site.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/lunr-2.3.3.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/search.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/index.js"></script>
+
+    <!--SCRIPTS-->
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/navigation.js"></script>
+</body>
+
+</html>
+<!--startindex-->

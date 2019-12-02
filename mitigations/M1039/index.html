@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+        <!-- insert analytics here-->
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel='shortcut icon' href='https://apowers313.github.io/generic-attack/theme/favicon.ico' type='image/x-icon'>
+        <title>Environment Variable Permissions - Enterprise | MITRE ATT&CK&trade;</title>
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='https://apowers313.github.io/generic-attack/theme/style/bootstrap.min.css' />
+        <link rel='stylesheet' href='https://apowers313.github.io/generic-attack/theme/style/bootstrap-glyphicon.min.css' />
+        <link rel="stylesheet" type="text/css" href="https://apowers313.github.io/generic-attack/theme/style.min.css?8cde5623">
+</head>
+
+<body>
+<!--stopindex-->
+<header>
+    
+        <nav class='navbar navbar-expand-lg navbar-dark fixed-top'>
+            <a class='navbar-brand' href='https://apowers313.github.io/generic-attack/'><img src="https://apowers313.github.io/generic-attack/theme/images/attack.png" height="50px"/></a>
+            <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse'
+                    aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+                <span class='navbar-toggler-icon' onclick="search('')"></span>
+            </button>
+            <div class='collapse navbar-collapse' id='navbarCollapse'>
+                <ul class='nav nav-tabs ml-auto'>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/matrices/"  class="nav-link" ><b>Matrices</b></a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/tactics/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Tactics</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/pre">PRE-ATT&CK</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/techniques/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Techniques</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/pre">PRE-ATT&CK</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/mitigations/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Mitigations</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/groups/"  class="nav-link" ><b>Groups</b></a></li>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/software/"  class="nav-link" ><b>Software</b></a></li>
+                </ul>
+                <ul class='navbar-nav flex-row d-md-flex float-right'>
+                    <li>
+                        <form class='form-inline pl-2'>
+                            <input class='form-control' type='text' placeholder='Search site' aria-label='Search' id="search"
+                                   autocomplete="off">
+                        </form>
+                        <div class="search-results"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+        <!-- don't edit or remove the line below even though it's commented out, it gets parsed and replaced by the previous-versions feature -->
+        <!-- !previous versions banner! -->
+        <!--startindex-->
+<div id='content'>    <div class='container-fluid'>
+        <div class='row'>
+ 
+             
+            <div class="nav flex-column col-xl-2 col-lg-3 col-md-3  sidebar nav pt-5 pb-3 pl-3 border-right" id="v-tab" role="tablist" aria-orientation="vertical">
+<!--stopindex-->
+        <button class="btn btn-default dropdown-toggle heading-dropdown mb-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ENTERPRISE</button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/enterprise">ENTERPRISE</a>
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/mobile">MOBILE</a>
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/example">EXAMPLE</a>
+    </div>
+    <div class="group-nav-desktop-view">
+        <span class="heading" id="v-home-tab" aria-selected="false">MITIGATIONS</span>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="0-0">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/enterprise/">Overview</a>
+            </div>
+</div>
+
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Account Use Policies-Account Use Policies">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1036/">Account Use Policies</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Active Directory Configuration-Active Directory Configuration">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1015/">Active Directory Configuration</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Antivirus/Antimalware-Antivirus/Antimalware">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1049/">Antivirus/Antimalware</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Application Developer Guidance-Application Developer Guidance">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1013/">Application Developer Guidance</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Application Isolation and Sandboxing-Application Isolation and Sandboxing">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1048/">Application Isolation and Sandboxing</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Audit-Audit">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1047/">Audit</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Behavior Prevention on Endpoint-Behavior Prevention on Endpoint">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1040/">Behavior Prevention on Endpoint</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Boot Integrity-Boot Integrity">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1046/">Boot Integrity</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Code Signing-Code Signing">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1045/">Code Signing</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Credential Access Protection-Credential Access Protection">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1043/">Credential Access Protection</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Data Backup-Data Backup">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1053/">Data Backup</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Disable or Remove Feature or Program-Disable or Remove Feature or Program">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1042/">Disable or Remove Feature or Program</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Do Not Mitigate-Do Not Mitigate">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1055/">Do Not Mitigate</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Encrypt Sensitive Information-Encrypt Sensitive Information">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1041/">Encrypt Sensitive Information</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head active" id="Environment Variable Permissions-Environment Variable Permissions">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1039/">Environment Variable Permissions</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Execution Prevention-Execution Prevention">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1038/">Execution Prevention</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Exploit Protection-Exploit Protection">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1050/">Exploit Protection</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Filter Network Traffic-Filter Network Traffic">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1037/">Filter Network Traffic</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Limit Access to Resource Over Network-Limit Access to Resource Over Network">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1035/">Limit Access to Resource Over Network</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Limit Hardware Installation-Limit Hardware Installation">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1034/">Limit Hardware Installation</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Limit Software Installation-Limit Software Installation">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1033/">Limit Software Installation</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Multi-factor Authentication-Multi-factor Authentication">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1032/">Multi-factor Authentication</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Network Intrusion Prevention-Network Intrusion Prevention">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1031/">Network Intrusion Prevention</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Network Segmentation-Network Segmentation">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1030/">Network Segmentation</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Operating System Configuration-Operating System Configuration">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1028/">Operating System Configuration</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Password Policies-Password Policies">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1027/">Password Policies</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Privileged Account Management-Privileged Account Management">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1026/">Privileged Account Management</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Privileged Process Integrity-Privileged Process Integrity">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1025/">Privileged Process Integrity</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Remote Data Storage-Remote Data Storage">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1029/">Remote Data Storage</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Restrict File and Directory Permissions-Restrict File and Directory Permissions">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1022/">Restrict File and Directory Permissions</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Restrict Library Loading-Restrict Library Loading">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1044/">Restrict Library Loading</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Restrict Registry Permissions-Restrict Registry Permissions">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1024/">Restrict Registry Permissions</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Restrict Web-Based Content-Restrict Web-Based Content">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1021/">Restrict Web-Based Content</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Software Configuration-Software Configuration">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1054/">Software Configuration</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="SSL/TLS Inspection-SSL/TLS Inspection">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1020/">SSL/TLS Inspection</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Threat Intelligence Program-Threat Intelligence Program">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1019/">Threat Intelligence Program</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Update Software-Update Software">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1051/">Update Software</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="User Account Control-User Account Control">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1052/">User Account Control</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="User Account Management-User Account Management">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1018/">User Account Management</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="User Training-User Training">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1017/">User Training</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Vulnerability Scanning-Vulnerability Scanning">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1016/">Vulnerability Scanning</a>
+            </div>
+</div>
+
+
+    </div>
+    <div class="group-nav-mobile-view">
+        <span class="heading" id="v-home-tab" aria-selected="false">MITIGATIONS</span>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="0-0">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/enterprise/">Overview</a>
+            </div>
+</div>
+
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="5b05175c91114326b5825f9622d4dd16">
+                <span>A-C</span>
+            <div class="expand-button collapsed" id="5b05175c91114326b5825f9622d4dd16-header" data-toggle="collapse" data-target="#5b05175c91114326b5825f9622d4dd16-body" aria-expanded="false" aria-controls="#5b05175c91114326b5825f9622d4dd16-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="5b05175c91114326b5825f9622d4dd16-body" aria-labelledby="5b05175c91114326b5825f9622d4dd16-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="5b05175c91114326b5825f9622d4dd16-5052c1d0908d48858364698e06fb5b7b">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1036/">Account Use Policies</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="5b05175c91114326b5825f9622d4dd16-92b1299dbf0f49c5b8047b8a275f83bd">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1015/">Active Directory Configuration</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="5b05175c91114326b5825f9622d4dd16-45584efaa83f4bd59051544bc3125f1a">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1049/">Antivirus/Antimalware</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="5b05175c91114326b5825f9622d4dd16-c3c8e38bfff543769c79db8427831967">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1013/">Application Developer Guidance</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="5b05175c91114326b5825f9622d4dd16-68f80fca58d24e63bbf1ccb8175342d0">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1048/">Application Isolation and Sandboxing</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="5b05175c91114326b5825f9622d4dd16-7274c7e7c55c4145a5fdaf14d2af08b9">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1047/">Audit</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="5b05175c91114326b5825f9622d4dd16-291c8c9bacab447cb8d4d3903c0af298">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1040/">Behavior Prevention on Endpoint</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="5b05175c91114326b5825f9622d4dd16-4d2fb32f0620437599040d5d48a2beba">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1046/">Boot Integrity</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="5b05175c91114326b5825f9622d4dd16-0fa65459273f413eb1ac0196dab98005">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1045/">Code Signing</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="5b05175c91114326b5825f9622d4dd16-daa1237861154beea097498fe4ecc84a">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1043/">Credential Access Protection</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="fa1a06e749344d54a55a0f4c20135c86">
+                <span>D-F</span>
+            <div class="expand-button collapsed" id="fa1a06e749344d54a55a0f4c20135c86-header" data-toggle="collapse" data-target="#fa1a06e749344d54a55a0f4c20135c86-body" aria-expanded="false" aria-controls="#fa1a06e749344d54a55a0f4c20135c86-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="fa1a06e749344d54a55a0f4c20135c86-body" aria-labelledby="fa1a06e749344d54a55a0f4c20135c86-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="fa1a06e749344d54a55a0f4c20135c86-cc2e9094102340b0a0d15a0497ca5864">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1053/">Data Backup</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="fa1a06e749344d54a55a0f4c20135c86-a310bfd94b264d5eb4d7bec81eabf2c4">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1042/">Disable or Remove Feature or Program</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="fa1a06e749344d54a55a0f4c20135c86-a6c482624c6f43f799eb1762afc7e551">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1055/">Do Not Mitigate</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="fa1a06e749344d54a55a0f4c20135c86-b2c2b83d0dbf487799a870e70ab0110d">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1041/">Encrypt Sensitive Information</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head active" id="fa1a06e749344d54a55a0f4c20135c86-38f9bb0b6e33461abe9af771a1eda36a">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1039/">Environment Variable Permissions</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="fa1a06e749344d54a55a0f4c20135c86-c7f8a255c4024313a3d8dae8ea25b39b">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1038/">Execution Prevention</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="fa1a06e749344d54a55a0f4c20135c86-acadbec0573f4d5893310b2de4c0af85">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1050/">Exploit Protection</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="fa1a06e749344d54a55a0f4c20135c86-bb08ee80be6e49328ff7186fdad1505b">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1037/">Filter Network Traffic</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="964f03cbd1ac48e48f736649ce4becef">
+                <span>G-I</span>
+            <div class="expand-button collapsed" id="964f03cbd1ac48e48f736649ce4becef-header" data-toggle="collapse" data-target="#964f03cbd1ac48e48f736649ce4becef-body" aria-expanded="false" aria-controls="#964f03cbd1ac48e48f736649ce4becef-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="964f03cbd1ac48e48f736649ce4becef-body" aria-labelledby="964f03cbd1ac48e48f736649ce4becef-header">
+                    
+<div class="sidenav">
+            <span>No mitigations</span>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="304fa4cb4f1246c88a53c92a74ee7555">
+                <span>J-L</span>
+            <div class="expand-button collapsed" id="304fa4cb4f1246c88a53c92a74ee7555-header" data-toggle="collapse" data-target="#304fa4cb4f1246c88a53c92a74ee7555-body" aria-expanded="false" aria-controls="#304fa4cb4f1246c88a53c92a74ee7555-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="304fa4cb4f1246c88a53c92a74ee7555-body" aria-labelledby="304fa4cb4f1246c88a53c92a74ee7555-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="304fa4cb4f1246c88a53c92a74ee7555-300e77c9024e43c28701dd21dbf2e0e1">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1035/">Limit Access to Resource Over Network</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="304fa4cb4f1246c88a53c92a74ee7555-a9ea115c453c41e0b5513ccf89df889b">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1034/">Limit Hardware Installation</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="304fa4cb4f1246c88a53c92a74ee7555-7bce84ac0e374da083bf2771560a829c">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1033/">Limit Software Installation</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="9d390fa192b44f4e9bddc8625687c74c">
+                <span>M-O</span>
+            <div class="expand-button collapsed" id="9d390fa192b44f4e9bddc8625687c74c-header" data-toggle="collapse" data-target="#9d390fa192b44f4e9bddc8625687c74c-body" aria-expanded="false" aria-controls="#9d390fa192b44f4e9bddc8625687c74c-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="9d390fa192b44f4e9bddc8625687c74c-body" aria-labelledby="9d390fa192b44f4e9bddc8625687c74c-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="9d390fa192b44f4e9bddc8625687c74c-a3cc6cb892284cab8a2fe72a1cac1557">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1032/">Multi-factor Authentication</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="9d390fa192b44f4e9bddc8625687c74c-0ad0ae4dc3be4ae99d0005b489e0e4fd">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1031/">Network Intrusion Prevention</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="9d390fa192b44f4e9bddc8625687c74c-54f0cacac5be48aaa81f3758af81075b">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1030/">Network Segmentation</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="9d390fa192b44f4e9bddc8625687c74c-d59d3825113446b680aa38465f0b5797">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1028/">Operating System Configuration</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="c577074b2fb440f4b1574ed1e755b068">
+                <span>P-R</span>
+            <div class="expand-button collapsed" id="c577074b2fb440f4b1574ed1e755b068-header" data-toggle="collapse" data-target="#c577074b2fb440f4b1574ed1e755b068-body" aria-expanded="false" aria-controls="#c577074b2fb440f4b1574ed1e755b068-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="c577074b2fb440f4b1574ed1e755b068-body" aria-labelledby="c577074b2fb440f4b1574ed1e755b068-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="c577074b2fb440f4b1574ed1e755b068-0b5d8814a71f40f484cda88a008c3999">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1027/">Password Policies</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="c577074b2fb440f4b1574ed1e755b068-312109c8e15946d1ab32fbca9cfa7cd5">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1026/">Privileged Account Management</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="c577074b2fb440f4b1574ed1e755b068-6cde5bdec4014e2680f74c426623b00f">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1025/">Privileged Process Integrity</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="c577074b2fb440f4b1574ed1e755b068-442b41c6014b4081b8ef79c6acb3e6e4">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1029/">Remote Data Storage</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="c577074b2fb440f4b1574ed1e755b068-8f94ac39e57c49279645e8398e5fbf7a">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1022/">Restrict File and Directory Permissions</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="c577074b2fb440f4b1574ed1e755b068-812a915a75124c66b12ca58a855ffcd8">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1044/">Restrict Library Loading</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="c577074b2fb440f4b1574ed1e755b068-c1cf62b27826400fa82ee35cb01c6c9a">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1024/">Restrict Registry Permissions</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="c577074b2fb440f4b1574ed1e755b068-4a0cd1e2cf444b6798d1632dabb08f84">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1021/">Restrict Web-Based Content</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="fa6cbb0087c74cec9c3b962b26b439ad">
+                <span>S-U</span>
+            <div class="expand-button collapsed" id="fa6cbb0087c74cec9c3b962b26b439ad-header" data-toggle="collapse" data-target="#fa6cbb0087c74cec9c3b962b26b439ad-body" aria-expanded="false" aria-controls="#fa6cbb0087c74cec9c3b962b26b439ad-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="fa6cbb0087c74cec9c3b962b26b439ad-body" aria-labelledby="fa6cbb0087c74cec9c3b962b26b439ad-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="fa6cbb0087c74cec9c3b962b26b439ad-73647ed2aa3e4a40a25758fa195d4092">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1054/">Software Configuration</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="fa6cbb0087c74cec9c3b962b26b439ad-95cbd24582f24819b129e13be579784c">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1020/">SSL/TLS Inspection</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="fa6cbb0087c74cec9c3b962b26b439ad-0c415e86dd46489cb8409a849a3fe3b7">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1019/">Threat Intelligence Program</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="fa6cbb0087c74cec9c3b962b26b439ad-ceec64aa70824f00a631fc837a2358c9">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1051/">Update Software</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="fa6cbb0087c74cec9c3b962b26b439ad-7094f266690841c3b89e9bb34fa22316">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1052/">User Account Control</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="fa6cbb0087c74cec9c3b962b26b439ad-7d176bfa82ed4650afaadd4f2690c45c">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1018/">User Account Management</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="fa6cbb0087c74cec9c3b962b26b439ad-e3ec8a1b07b243f0b3f6f60506753640">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1017/">User Training</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="5de57754360741f58da358a3622c9a32">
+                <span>V-X</span>
+            <div class="expand-button collapsed" id="5de57754360741f58da358a3622c9a32-header" data-toggle="collapse" data-target="#5de57754360741f58da358a3622c9a32-body" aria-expanded="false" aria-controls="#5de57754360741f58da358a3622c9a32-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="5de57754360741f58da358a3622c9a32-body" aria-labelledby="5de57754360741f58da358a3622c9a32-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="5de57754360741f58da358a3622c9a32-557b0f9ad6344b38a19d234d3064fd0f">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1016/">Vulnerability Scanning</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="235679461e2b4b1fb06f690220f4291f">
+                <span>Y-Z</span>
+            <div class="expand-button collapsed" id="235679461e2b4b1fb06f690220f4291f-header" data-toggle="collapse" data-target="#235679461e2b4b1fb06f690220f4291f-body" aria-expanded="false" aria-controls="#235679461e2b4b1fb06f690220f4291f-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="235679461e2b4b1fb06f690220f4291f-body" aria-labelledby="235679461e2b4b1fb06f690220f4291f-header">
+                    
+<div class="sidenav">
+            <span>No mitigations</span>
+</div>
+
+        </div>
+</div>
+
+ 
+    </div>
+<!--startindex-->
+            </div>
+             
+            <div class="tab-content col-xl-10 col-lg-9 col-md-9 pt-4" id="v-tabContent">
+                <div class="tab-pane fade show active" id="v-attckmatrix" role="tabpanel" aria-labelledby="v-attckmatrix-tab">
+    
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/">Home</a></li>
+        <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/mitigations">Mitigations</a></li>
+        <li class="breadcrumb-item">Environment Variable Permissions</li>
+    </ol>
+    <div class="tab-pane fade show active" id="v-" role="tabpanel" aria-labelledby="v--tab"></div>
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container-fluid">
+                    <h1>
+                        Environment Variable Permissions
+                    </h1>
+                    <div class="row">
+                        <div class="col-md-8 description-body">
+                            <p>Prevent modification of environment variables by unauthorized users and groups.</p>
+                        </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                    <div class="card-data"><span class="h5 card-title">ID:</span> M1039</div>
+                                    <div class="card-data"><span class="h5 card-title">Version:</span> 1.0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <h2 class="pt-3" id ="techniquestable">Techniques Addressed by Mitigation</h2>
+                    <table class="table table-bordered table-alternate">
+                        <thead>
+                            <tr>
+                                <th scope="col">Domain</th>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td>
+                                        Enterprise
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1146">T1146</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1146">Clear Command History</a>   
+                                    </td>
+                                    <td>
+                                        <p>Making the associated environment variables read only can make sure that the history is preserved.<span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Securing bash history"><sup><a href="http://www.akyl.net/securing-bashhistory-file-make-sure-your-linux-system-users-won%E2%80%99t-hide-or-delete-their-bashhistory" target="_blank" data-hasqtip="0" aria-describedby="qtip-0">[1]</a></sup></span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Enterprise
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1148">T1148</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1148">HISTCONTROL</a>   
+                                    </td>
+                                    <td>
+                                        <p>Prevent users from changing the <code>HISTCONTROL</code> environment variable.</p>
+                                    </td>
+                                </tr>
+                        </tbody>
+                    </table>
+
+                    <h2 class="pt-3" id="references">References</h2>
+
+                    <div class="row">
+                        <div class="col">
+                            <ol>
+                                        <li>
+                                            <span  id="scite-1" class="scite-citation">
+                                                <span class="scite-citation-text">
+                                                    <a rel="nofollow" class="external text" name="scite-1" href="https://apowers313.github.io/generic-attackhttp://www.akyl.net/securing-bashhistory-file-make-sure-your-linux-system-users-won%E2%80%99t-hide-or-delete-their-bashhistory" target="_blank">
+                                                        Mathew Branwell. (2012, March 21). Securing .bash_history file. Retrieved July 8, 2017.
+                                                    </a>
+                                                </span>
+                                            </span>
+                                        </li>
+                            </ol>
+                        </div>
+                        <div class="col">
+                        </div>             
+                    </div>
+  
+            </div>
+        </div>
+    </div>
+
+                </div>
+            </div>
+        </div>  
+    </div>
+</div>
+<!--stopindex-->
+<footer class="footer p-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 col-sm-4 col-md-3">  
+                <div class="footer-center-responsive my-auto">
+                    <a href="https://www.mitre.org" target="_blank" rel="noopener" aria-label="MITRE">
+                        <img src="https://apowers313.github.io/generic-attack/theme/images/attackwhiteontrans.gif" class="mitre-logo-wtrans">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2 col-sm-2 footer-responsive-break"></div>
+            <div class="col-6 col-sm-6 text-center">  
+                <p>
+                    blah blah copyright blah.
+                </p>
+                <div class="row">
+                    <div class="col text-right">
+                        <small>
+                            <a href="https://apowers313.github.io/generic-attack/resources/privacy" class="footer-link">Privacy Policy</a>
+                        </small>
+                    </div>
+                    <div class="col text-left">
+                        <small>
+                            <a href="https://apowers313.github.io/generic-attack/resources/terms-of-use" class="footer-link">Terms of Use</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 p-2 footer-responsive-break"></div>
+            <div class="col">
+                <div class="footer-float-right-responsive">
+                    <div class="mb-1">
+                        <a href="https://twitter.com/MITREattack" class="btn btn-primary w-100">
+                            <!-- <i class="fa fa-twitter"></i> -->
+                            <b>BUTTON!</b>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="https://apowers313.github.io/generic-attack/contact" class="btn btn-primary w-100">
+                            <b>BUTTON 2!</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+        <!--SCRIPTS-->
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/jquery-3.2.1.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/popper.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/bootstrap.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/site.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/lunr-2.3.3.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/search.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/index.js"></script>
+
+    <!--SCRIPTS-->
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/navigation.js"></script>
+</body>
+
+</html>
+<!--startindex-->

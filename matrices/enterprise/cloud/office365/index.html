@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+        <!-- insert analytics here-->
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel='shortcut icon' href='https://apowers313.github.io/generic-attack/theme/favicon.ico' type='image/x-icon'>
+        <title>Matrix - Enterprise | MITRE ATT&CK&trade;</title>
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='https://apowers313.github.io/generic-attack/theme/style/bootstrap.min.css' />
+        <link rel='stylesheet' href='https://apowers313.github.io/generic-attack/theme/style/bootstrap-glyphicon.min.css' />
+        <link rel="stylesheet" type="text/css" href="https://apowers313.github.io/generic-attack/theme/style.min.css?8cde5623">
+</head>
+
+<body>
+<!--stopindex-->
+<header>
+    
+        <nav class='navbar navbar-expand-lg navbar-dark fixed-top'>
+            <a class='navbar-brand' href='https://apowers313.github.io/generic-attack/'><img src="https://apowers313.github.io/generic-attack/theme/images/attack.png" height="50px"/></a>
+            <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse'
+                    aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+                <span class='navbar-toggler-icon' onclick="search('')"></span>
+            </button>
+            <div class='collapse navbar-collapse' id='navbarCollapse'>
+                <ul class='nav nav-tabs ml-auto'>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/matrices/"  class="nav-link active" ><b>Matrices</b></a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/tactics/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Tactics</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/pre">PRE-ATT&CK</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/techniques/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Techniques</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/pre">PRE-ATT&CK</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/mitigations/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Mitigations</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/groups/"  class="nav-link" ><b>Groups</b></a></li>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/software/"  class="nav-link" ><b>Software</b></a></li>
+                </ul>
+                <ul class='navbar-nav flex-row d-md-flex float-right'>
+                    <li>
+                        <form class='form-inline pl-2'>
+                            <input class='form-control' type='text' placeholder='Search site' aria-label='Search' id="search"
+                                   autocomplete="off">
+                        </form>
+                        <div class="search-results"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+        <!-- don't edit or remove the line below even though it's commented out, it gets parsed and replaced by the previous-versions feature -->
+        <!-- !previous versions banner! -->
+        <!--startindex-->
+<div id='content'>    <div class='container-fluid'>
+        <div class='row'>
+ 
+             
+            <div class="nav flex-column col-xl-2 col-lg-3 col-md-3  sidebar nav pt-5 pb-3 pl-3 border-right" id="v-tab" role="tablist" aria-orientation="vertical">
+<!--stopindex-->
+    <span class="heading" id="v-home-tab" aria-selected="false">MATRICES</span>
+
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="pre-pre">
+                <a href="https://apowers313.github.io/generic-attack/matrices/pre/">PRE-ATT&CK</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="example-example">
+                <a href="https://apowers313.github.io/generic-attack/matrices/example/">Example</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="enterprise">
+                <a href="https://apowers313.github.io/generic-attack/matrices/enterprise/">Enterprise</a>
+            <div class="expand-button collapsed" id="enterprise-header" data-toggle="collapse" data-target="#enterprise-body" aria-expanded="false" aria-controls="#enterprise-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="enterprise-body" aria-labelledby="enterprise-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="enterprise-windows">
+                <a href="https://apowers313.github.io/generic-attack/matrices/enterprise/windows/">Windows</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="enterprise-macos">
+                <a href="https://apowers313.github.io/generic-attack/matrices/enterprise/macos/">macOS</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="enterprise-linux">
+                <a href="https://apowers313.github.io/generic-attack/matrices/enterprise/linux/">Linux</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+        <div class="sidenav-head " id="enterprise-cloud">
+                <a href="https://apowers313.github.io/generic-attack/matrices/enterprise/cloud/">Cloud</a>
+            <div class="expand-button collapsed" id="enterprise-cloud-header" data-toggle="collapse" data-target="#enterprise-cloud-body" aria-expanded="false" aria-controls="#enterprise-cloud-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="enterprise-cloud-body" aria-labelledby="enterprise-cloud-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="enterprise-cloud-aws">
+                <a href="https://apowers313.github.io/generic-attack/matrices/enterprise/cloud/aws/">AWS</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="enterprise-cloud-gcp">
+                <a href="https://apowers313.github.io/generic-attack/matrices/enterprise/cloud/gcp/">GCP</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="enterprise-cloud-azure">
+                <a href="https://apowers313.github.io/generic-attack/matrices/enterprise/cloud/azure/">Azure</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head active" id="enterprise-cloud-office">
+                <a href="https://apowers313.github.io/generic-attack/matrices/enterprise/cloud/office365/">Office 365</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="enterprise-cloud-azure">
+                <a href="https://apowers313.github.io/generic-attack/matrices/enterprise/cloud/azuread/">Azure AD</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="enterprise-cloud-saas">
+                <a href="https://apowers313.github.io/generic-attack/matrices/enterprise/cloud/saas/">SaaS</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="mobile">
+                <a href="https://apowers313.github.io/generic-attack/matrices/mobile/">Mobile</a>
+            <div class="expand-button collapsed" id="mobile-header" data-toggle="collapse" data-target="#mobile-body" aria-expanded="false" aria-controls="#mobile-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="mobile-body" aria-labelledby="mobile-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="mobile-android">
+                <a href="https://apowers313.github.io/generic-attack/matrices/mobile/android/">Android</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="mobile-ios">
+                <a href="https://apowers313.github.io/generic-attack/matrices/mobile/ios/">iOS</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+  
+<!--startindex-->
+            </div>
+             
+            <div class="tab-content col-xl-10 col-lg-9 col-md-9 pt-4" id="v-tabContent">
+                <div class="tab-pane fade show active" id="v-attckmatrix" role="tabpanel" aria-labelledby="v-attckmatrix-tab">
+<!--stopindex-->
+    <div class="row">
+        <div class="col-md-9">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/">Home</a></li>
+                <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/matrices/enterprise/">Matrices</a></li>
+                    <li class="breadcrumb-item">Office 365</li>
+            </ol>
+        </div>
+        <div class="col">
+            <span class="h3 mt-3 float-right">
+                <a href="https://mitre-attack.github.io/attack-navigator" class="btn btn-navy" target="_blank">Launch the ATT&amp;CK&trade; Navigator <img src="https://apowers313.github.io/generic-attack/theme/images/external-link.svg" width="10"></a>
+            </span>
+        </div>
+    </div>
+    <div class="tab-pane fade show active" id="v-attckmatrix" role="tabpanel" aria-labelledby="v-attckmatrix-tab">
+        <div class="container-fluid">
+
+            <h1>Office 365 Matrix</h1>             
+
+            <p>
+                Below are the tactics and technique representing the MITRE ATT&CK Matrix&trade; for Enterprise covering cloud-based techniques. 
+                        The Matrix contains information for the Office 365 platform.
+            </p>
+            
+
+                <span class="fs-s">Last Modified: 2019-10-09 18:48:31.906000</span>
+                <div class="overflow-x-auto">
+                    <table class='table table-matrix'>
+                            <thead class='matrix-header'>
+                            <tr>
+                                        <th scope='col' class="border">
+                                            <a class="matrix-tactics-url" href="https://apowers313.github.io/generic-attack/tactics/TA0001/">Initial Access</a>
+                                        </th>
+                                        <th scope='col' class="border">
+                                            <a class="matrix-tactics-url" href="https://apowers313.github.io/generic-attack/tactics/TA0003/">Persistence</a>
+                                        </th>
+                                        <th scope='col' class="border">
+                                            <a class="matrix-tactics-url" href="https://apowers313.github.io/generic-attack/tactics/TA0004/">Privilege Escalation</a>
+                                        </th>
+                                        <th scope='col' class="border">
+                                            <a class="matrix-tactics-url" href="https://apowers313.github.io/generic-attack/tactics/TA0005/">Defense Evasion</a>
+                                        </th>
+                                        <th scope='col' class="border">
+                                            <a class="matrix-tactics-url" href="https://apowers313.github.io/generic-attack/tactics/TA0006/">Credential Access</a>
+                                        </th>
+                                        <th scope='col' class="border">
+                                            <a class="matrix-tactics-url" href="https://apowers313.github.io/generic-attack/tactics/TA0007/">Discovery</a>
+                                        </th>
+                                        <th scope='col' class="border">
+                                            <a class="matrix-tactics-url" href="https://apowers313.github.io/generic-attack/tactics/TA0008/">Lateral Movement</a>
+                                        </th>
+                                        <th scope='col' class="border">
+                                            <a class="matrix-tactics-url" href="https://apowers313.github.io/generic-attack/tactics/TA0009/">Collection</a>
+                                        </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Spearphishing Link-initial access-tab" href="https://apowers313.github.io/generic-attack/techniques/T1192">Spearphishing Link</a>
+                                                </td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Account Manipulation-persistence-tab" href="https://apowers313.github.io/generic-attack/techniques/T1098">Account Manipulation</a>
+                                                </td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Valid Accounts-privilege escalation-tab" href="https://apowers313.github.io/generic-attack/techniques/T1078">Valid Accounts</a>
+                                                </td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Application Access Token-defense evasion-tab" href="https://apowers313.github.io/generic-attack/techniques/T1527">Application Access Token</a>
+                                                </td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Account Manipulation-credential access-tab" href="https://apowers313.github.io/generic-attack/techniques/T1098">Account Manipulation</a>
+                                                </td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Account Discovery-discovery-tab" href="https://apowers313.github.io/generic-attack/techniques/T1087">Account Discovery</a>
+                                                </td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Application Access Token-lateral movement-tab" href="https://apowers313.github.io/generic-attack/techniques/T1527">Application Access Token</a>
+                                                </td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Email Collection-collection-tab" href="https://apowers313.github.io/generic-attack/techniques/T1114">Email Collection</a>
+                                                </td>
+                                </tr>
+                                <tr>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Valid Accounts-initial access-tab" href="https://apowers313.github.io/generic-attack/techniques/T1078">Valid Accounts</a>
+                                                </td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Create Account-persistence-tab" href="https://apowers313.github.io/generic-attack/techniques/T1136">Create Account</a>
+                                                </td>
+                                                <td class="no-border"></td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Redundant Access-defense evasion-tab" href="https://apowers313.github.io/generic-attack/techniques/T1108">Redundant Access</a>
+                                                </td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Brute Force-credential access-tab" href="https://apowers313.github.io/generic-attack/techniques/T1110">Brute Force</a>
+                                                </td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Cloud Service Dashboard-discovery-tab" href="https://apowers313.github.io/generic-attack/techniques/T1538">Cloud Service Dashboard</a>
+                                                </td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Internal Spearphishing-lateral movement-tab" href="https://apowers313.github.io/generic-attack/techniques/T1534">Internal Spearphishing</a>
+                                                </td>
+                                                <td class="no-border"></td>
+                                </tr>
+                                <tr>
+                                                <td class="no-border"></td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Office Application Startup-persistence-tab" href="https://apowers313.github.io/generic-attack/techniques/T1137">Office Application Startup</a>
+                                                </td>
+                                                <td class="no-border"></td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Valid Accounts-defense evasion-tab" href="https://apowers313.github.io/generic-attack/techniques/T1078">Valid Accounts</a>
+                                                </td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Steal Application Access Token-credential access-tab" href="https://apowers313.github.io/generic-attack/techniques/T1528">Steal Application Access Token</a>
+                                                </td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Cloud Service Discovery-discovery-tab" href="https://apowers313.github.io/generic-attack/techniques/T1526">Cloud Service Discovery</a>
+                                                </td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Web Session Cookie-lateral movement-tab" href="https://apowers313.github.io/generic-attack/techniques/T1506">Web Session Cookie</a>
+                                                </td>
+                                                <td class="no-border"></td>
+                                </tr>
+                                <tr>
+                                                <td class="no-border"></td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Redundant Access-persistence-tab" href="https://apowers313.github.io/generic-attack/techniques/T1108">Redundant Access</a>
+                                                </td>
+                                                <td class="no-border"></td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Web Session Cookie-defense evasion-tab" href="https://apowers313.github.io/generic-attack/techniques/T1506">Web Session Cookie</a>
+                                                </td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Steal Web Session Cookie-credential access-tab" href="https://apowers313.github.io/generic-attack/techniques/T1539">Steal Web Session Cookie</a>
+                                                </td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Permission Groups Discovery-discovery-tab" href="https://apowers313.github.io/generic-attack/techniques/T1069">Permission Groups Discovery</a>
+                                                </td>
+                                                <td class="no-border"></td>
+                                                <td class="no-border"></td>
+                                </tr>
+                                <tr>
+                                                <td class="no-border"></td>
+                                                <td class="border">
+                                                    <a class="technique-mapping" id="v-Valid Accounts-persistence-tab" href="https://apowers313.github.io/generic-attack/techniques/T1078">Valid Accounts</a>
+                                                </td>
+                                                <td class="no-border"></td>
+                                                <td class="no-border"></td>
+                                                <td class="no-border"></td>
+                                                <td class="no-border"></td>
+                                                <td class="no-border"></td>
+                                                <td class="no-border"></td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+<!--startindex-->
+                </div>
+            </div>
+        </div>  
+    </div>
+</div>
+<!--stopindex-->
+<footer class="footer p-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 col-sm-4 col-md-3">  
+                <div class="footer-center-responsive my-auto">
+                    <a href="https://www.mitre.org" target="_blank" rel="noopener" aria-label="MITRE">
+                        <img src="https://apowers313.github.io/generic-attack/theme/images/attackwhiteontrans.gif" class="mitre-logo-wtrans">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2 col-sm-2 footer-responsive-break"></div>
+            <div class="col-6 col-sm-6 text-center">  
+                <p>
+                    blah blah copyright blah.
+                </p>
+                <div class="row">
+                    <div class="col text-right">
+                        <small>
+                            <a href="https://apowers313.github.io/generic-attack/resources/privacy" class="footer-link">Privacy Policy</a>
+                        </small>
+                    </div>
+                    <div class="col text-left">
+                        <small>
+                            <a href="https://apowers313.github.io/generic-attack/resources/terms-of-use" class="footer-link">Terms of Use</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 p-2 footer-responsive-break"></div>
+            <div class="col">
+                <div class="footer-float-right-responsive">
+                    <div class="mb-1">
+                        <a href="https://twitter.com/MITREattack" class="btn btn-primary w-100">
+                            <!-- <i class="fa fa-twitter"></i> -->
+                            <b>BUTTON!</b>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="https://apowers313.github.io/generic-attack/contact" class="btn btn-primary w-100">
+                            <b>BUTTON 2!</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+        <!--SCRIPTS-->
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/jquery-3.2.1.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/popper.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/bootstrap.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/site.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/lunr-2.3.3.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/search.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/index.js"></script>
+
+    <!--SCRIPTS-->
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/navigation.js"></script>
+</body>
+
+</html>
+<!--startindex-->

@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+        <!-- insert analytics here-->
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel='shortcut icon' href='https://apowers313.github.io/generic-attack/theme/favicon.ico' type='image/x-icon'>
+        <title>Web Service - Mobile | MITRE ATT&CK&trade;</title>
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='https://apowers313.github.io/generic-attack/theme/style/bootstrap.min.css' />
+        <link rel='stylesheet' href='https://apowers313.github.io/generic-attack/theme/style/bootstrap-glyphicon.min.css' />
+        <link rel="stylesheet" type="text/css" href="https://apowers313.github.io/generic-attack/theme/style.min.css?8cde5623">
+</head>
+
+<body>
+<!--stopindex-->
+<header>
+    
+        <nav class='navbar navbar-expand-lg navbar-dark fixed-top'>
+            <a class='navbar-brand' href='https://apowers313.github.io/generic-attack/'><img src="https://apowers313.github.io/generic-attack/theme/images/attack.png" height="50px"/></a>
+            <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse'
+                    aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+                <span class='navbar-toggler-icon' onclick="search('')"></span>
+            </button>
+            <div class='collapse navbar-collapse' id='navbarCollapse'>
+                <ul class='nav nav-tabs ml-auto'>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/matrices/"  class="nav-link" ><b>Matrices</b></a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/tactics/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Tactics</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/pre">PRE-ATT&CK</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/techniques/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Techniques</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/pre">PRE-ATT&CK</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/mitigations/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Mitigations</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/groups/"  class="nav-link" ><b>Groups</b></a></li>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/software/"  class="nav-link" ><b>Software</b></a></li>
+                </ul>
+                <ul class='navbar-nav flex-row d-md-flex float-right'>
+                    <li>
+                        <form class='form-inline pl-2'>
+                            <input class='form-control' type='text' placeholder='Search site' aria-label='Search' id="search"
+                                   autocomplete="off">
+                        </form>
+                        <div class="search-results"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+        <!-- don't edit or remove the line below even though it's commented out, it gets parsed and replaced by the previous-versions feature -->
+        <!-- !previous versions banner! -->
+        <!--startindex-->
+<div id='content'>    <div class='container-fluid'>
+        <div class='row'>
+ 
+             
+            <div class="nav flex-column col-xl-2 col-lg-3 col-md-3  sidebar nav pt-5 pb-3 pl-3 border-right" id="v-tab" role="tablist" aria-orientation="vertical">
+<!--stopindex-->
+        <button class="btn btn-default dropdown-toggle heading-dropdown mb-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MOBILE</button>
+
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/enterprise">ENTERPRISE</a>
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/mobile">MOBILE</a>
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/example">EXAMPLE</a>
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/pre">PRE-ATT&CK</a>
+    </div>
+    <div id="v-tab" role="tablist" aria-orientation="vertical">
+        <span class="heading" id="v-home-tab" aria-selected="false">TECHNIQUES</span>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="0-0">
+                <a href="https://apowers313.github.io/generic-attack/techniques/mobile/">Overview</a>
+            </div>
+</div>
+
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="TA0027">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0027">Initial Access</a>
+            <div class="expand-button collapsed" id="TA0027-header" data-toggle="collapse" data-target="#TA0027-body" aria-expanded="false" aria-controls="#TA0027-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="TA0027-body" aria-labelledby="TA0027-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0027-T1475">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1475/">Deliver Malicious App via Authorized App Store</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0027-T1476">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1476/">Deliver Malicious App via Other Means</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0027-T1456">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1456/">Drive-by Compromise</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0027-T1458">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1458/">Exploit via Charging Station or PC</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0027-T1477">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1477/">Exploit via Radio Interfaces</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0027-T1478">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1478/">Install Insecure or Malicious Configuration</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0027-T1461">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1461/">Lockscreen Bypass</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0027-T1444">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1444/">Masquerade as Legitimate Application</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0027-T1474">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1474/">Supply Chain Compromise</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="TA0028">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0028">Persistence</a>
+            <div class="expand-button collapsed" id="TA0028-header" data-toggle="collapse" data-target="#TA0028-body" aria-expanded="false" aria-controls="#TA0028-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="TA0028-body" aria-labelledby="TA0028-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0028-T1401">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1401/">Abuse Device Administrator Access to Prevent Removal</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0028-T1402">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1402/">App Auto-Start at Device Boot</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0028-T1403">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1403/">Modify Cached Executable Code</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0028-T1398">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1398/">Modify OS Kernel or Boot Partition</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0028-T1400">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1400/">Modify System Partition</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0028-T1399">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1399/">Modify Trusted Execution Environment</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="TA0029">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0029">Privilege Escalation</a>
+            <div class="expand-button collapsed" id="TA0029-header" data-toggle="collapse" data-target="#TA0029-body" aria-expanded="false" aria-controls="#TA0029-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="TA0029-body" aria-labelledby="TA0029-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0029-T1404">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1404/">Exploit OS Vulnerability</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0029-T1405">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1405/">Exploit TEE Vulnerability</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="TA0030">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0030">Defense Evasion</a>
+            <div class="expand-button collapsed" id="TA0030-header" data-toggle="collapse" data-target="#TA0030-body" aria-expanded="false" aria-controls="#TA0030-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="TA0030-body" aria-labelledby="TA0030-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0030-T1453">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1453/">Abuse Accessibility Features</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0030-T1418">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1418/">Application Discovery</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0030-T1446">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1446/">Device Lockout</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0030-T1408">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1408/">Disguise Root/Jailbreak Indicators</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0030-T1407">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1407/">Download New Code at Runtime</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0030-T1523">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1523/">Evade Analysis Environment</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0030-T1516">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1516/">Input Injection</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0030-T1478">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1478/">Install Insecure or Malicious Configuration</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0030-T1398">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1398/">Modify OS Kernel or Boot Partition</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0030-T1400">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1400/">Modify System Partition</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0030-T1399">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1399/">Modify Trusted Execution Environment</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0030-T1406">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1406/">Obfuscated Files or Information</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0030-T1508">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1508/">Suppress Application Icon</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="TA0031">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0031">Credential Access</a>
+            <div class="expand-button collapsed" id="TA0031-header" data-toggle="collapse" data-target="#TA0031-body" aria-expanded="false" aria-controls="#TA0031-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="TA0031-body" aria-labelledby="TA0031-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0031-T1453">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1453/">Abuse Accessibility Features</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0031-T1517">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1517/">Access Notifications</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0031-T1413">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1413/">Access Sensitive Data in Device Logs</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0031-T1409">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1409/">Access Stored Application Data</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0031-T1416">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1416/">Android Intent Hijacking</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0031-T1414">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1414/">Capture Clipboard Data</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0031-T1412">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1412/">Capture SMS Messages</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0031-T1405">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1405/">Exploit TEE Vulnerability</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0031-T1417">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1417/">Input Capture</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0031-T1411">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1411/">Input Prompt</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0031-T1410">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1410/">Network Traffic Capture or Redirection</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0031-T1415">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1415/">URL Scheme Hijacking</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="TA0032">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0032">Discovery</a>
+            <div class="expand-button collapsed" id="TA0032-header" data-toggle="collapse" data-target="#TA0032-body" aria-expanded="false" aria-controls="#TA0032-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="TA0032-body" aria-labelledby="TA0032-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0032-T1418">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1418/">Application Discovery</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0032-T1523">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1523/">Evade Analysis Environment</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0032-T1420">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1420/">File and Directory Discovery</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0032-T1430">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1430/">Location Tracking</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0032-T1423">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1423/">Network Service Scanning</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0032-T1424">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1424/">Process Discovery</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0032-T1426">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1426/">System Information Discovery</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0032-T1422">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1422/">System Network Configuration Discovery</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0032-T1421">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1421/">System Network Connections Discovery</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="TA0033">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0033">Lateral Movement</a>
+            <div class="expand-button collapsed" id="TA0033-header" data-toggle="collapse" data-target="#TA0033-body" aria-expanded="false" aria-controls="#TA0033-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="TA0033-body" aria-labelledby="TA0033-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0033-T1427">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1427/">Attack PC via USB Connection</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0033-T1428">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1428/">Exploit Enterprise Resources</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="TA0034">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0034">Impact</a>
+            <div class="expand-button collapsed" id="TA0034-header" data-toggle="collapse" data-target="#TA0034-body" aria-expanded="false" aria-controls="#TA0034-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="TA0034-body" aria-labelledby="TA0034-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0034-T1453">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1453/">Abuse Accessibility Features</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0034-T1510">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1510/">Clipboard Modification</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0034-T1471">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1471/">Data Encrypted for Impact</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0034-T1447">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1447/">Delete Device Data</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0034-T1446">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1446/">Device Lockout</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0034-T1472">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1472/">Generate Fraudulent Advertising Revenue</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0034-T1516">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1516/">Input Injection</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0034-T1452">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1452/">Manipulate App Store Rankings or Ratings</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0034-T1400">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1400/">Modify System Partition</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0034-T1448">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1448/">Premium SMS Toll Fraud</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="TA0035">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0035">Collection</a>
+            <div class="expand-button collapsed" id="TA0035-header" data-toggle="collapse" data-target="#TA0035-body" aria-expanded="false" aria-controls="#TA0035-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="TA0035-body" aria-labelledby="TA0035-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0035-T1453">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1453/">Abuse Accessibility Features</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0035-T1435">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1435/">Access Calendar Entries</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0035-T1433">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1433/">Access Call Log</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0035-T1432">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1432/">Access Contact List</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0035-T1517">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1517/">Access Notifications</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0035-T1413">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1413/">Access Sensitive Data in Device Logs</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0035-T1409">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1409/">Access Stored Application Data</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0035-T1429">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1429/">Capture Audio</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0035-T1512">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1512/">Capture Camera</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0035-T1414">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1414/">Capture Clipboard Data</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0035-T1412">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1412/">Capture SMS Messages</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0035-T1533">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1533/">Data from Local System</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0035-T1417">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1417/">Input Capture</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0035-T1430">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1430/">Location Tracking</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0035-T1507">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1507/">Network Information Discovery</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0035-T1410">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1410/">Network Traffic Capture or Redirection</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0035-T1513">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1513/">Screen Capture</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="TA0036">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0036">Exfiltration</a>
+            <div class="expand-button collapsed" id="TA0036-header" data-toggle="collapse" data-target="#TA0036-body" aria-expanded="false" aria-controls="#TA0036-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="TA0036-body" aria-labelledby="TA0036-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0036-T1438">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1438/">Alternate Network Mediums</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0036-T1436">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1436/">Commonly Used Port</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0036-T1532">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1532/">Data Encrypted</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0036-T1437">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1437/">Standard Application Layer Protocol</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="TA0037">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0037">Command and Control</a>
+            <div class="expand-button collapsed" id="TA0037-header" data-toggle="collapse" data-target="#TA0037-body" aria-expanded="false" aria-controls="#TA0037-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="TA0037-body" aria-labelledby="TA0037-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0037-T1438">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1438/">Alternate Network Mediums</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0037-T1436">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1436/">Commonly Used Port</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0037-T1520">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1520/">Domain Generation Algorithms</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0037-T1437">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1437/">Standard Application Layer Protocol</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0037-T1521">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1521/">Standard Cryptographic Protocol</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0037-T1509">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1509/">Uncommonly Used Port</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head active" id="TA0037-T1481">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1481/">Web Service</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="TA0038">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0038">Network Effects</a>
+            <div class="expand-button collapsed" id="TA0038-header" data-toggle="collapse" data-target="#TA0038-body" aria-expanded="false" aria-controls="#TA0038-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="TA0038-body" aria-labelledby="TA0038-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0038-T1466">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1466/">Downgrade to Insecure Protocols</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0038-T1439">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1439/">Eavesdrop on Insecure Network Communication</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0038-T1449">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1449/">Exploit SS7 to Redirect Phone Calls/SMS</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0038-T1450">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1450/">Exploit SS7 to Track Device Location</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0038-T1464">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1464/">Jamming or Denial of Service</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0038-T1463">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1463/">Manipulate Device Communication</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0038-T1467">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1467/">Rogue Cellular Base Station</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0038-T1465">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1465/">Rogue Wi-Fi Access Points</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0038-T1451">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1451/">SIM Card Swap</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="TA0039">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0039">Remote Service Effects</a>
+            <div class="expand-button collapsed" id="TA0039-header" data-toggle="collapse" data-target="#TA0039-body" aria-expanded="false" aria-controls="#TA0039-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="TA0039-body" aria-labelledby="TA0039-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0039-T1470">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1470/">Obtain Device Cloud Backups</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0039-T1468">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1468/">Remotely Track Device Without Authorization</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA0039-T1469">
+                <a href="https://apowers313.github.io/generic-attack/techniques/T1469/">Remotely Wipe Data Without Authorization</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+  
+    </div>
+<!--startindex-->
+            </div>
+             
+            <div class="tab-content col-xl-10 col-lg-9 col-md-9 pt-4" id="v-tabContent">
+                <div class="tab-pane fade show active" id="v-attckmatrix" role="tabpanel" aria-labelledby="v-attckmatrix-tab">
+    
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/">Home</a></li>
+            <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/techniques/mobile">Techniques</a></li>
+            <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/techniques/mobile">Mobile</a></li>
+        <li class="breadcrumb-item">Web Service</li>
+    </ol>
+    <div class="tab-pane fade show active" id="v-" role="tabpanel" aria-labelledby="v--tab"></div>
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container-fluid">
+                    <h1>
+                        Web Service
+                    </h1>            
+                    <div class="row">
+                            <div class="col-md-8 description-body">
+                                <p>Adversaries may use an existing, legitimate external Web service as a means for relaying commands to a compromised system.</p><p>These commands may also include pointers to command and control (C2) infrastructure. Adversaries may post content, known as a dead drop resolver, on Web services with embedded (and often obfuscated/encoded) domains or IP addresses. Once infected, victims will reach out to and be redirected by these resolvers.</p><p>Popular websites and social media acting as a mechanism for C2 may give a significant amount of cover due to the likelihood that hosts within a network are already communicating with them prior to a compromise. Using common services, such as those offered by Google or Twitter, makes it easier for adversaries to hide in expected noise. Web service providers commonly use SSL/TLS encryption, giving adversaries an added level of protection.</p><p>Use of Web services may also protect back-end C2 infrastructure from discovery through malware binary analysis while also enabling operational resiliency (since this infrastructure may be dynamically changed).</p>
+                            </div>
+                    
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                        <div class="card-data"><span class="h5 card-title">ID:&nbsp;</span>T1481</div>
+                                        <div class="card-data"><span class="h5 card-title">Tactic Type:&nbsp;</span>Post-Adversary Device Access</div>
+                                        <div class="card-data"><span class="h5 card-title">Tactic:</span>
+                                                Command And Control                                        </div>
+                                        <div class="card-data"><span class="h5 card-title">Platform:&nbsp;</span>Android, iOS</div>
+                                        <div class="card-data"><span class="h5 card-title">Version:&nbsp;</span>1.0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <h2 class="pt-3" id ="examples">Procedure Examples</h2>
+                        <table class="table table-bordered table-alternate mt-2">
+                            <thead>
+                                <tr> 
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="https://apowers313.github.io/generic-attack/software/S0310"> ANDROIDOS_ANSERVER.A </a>
+                                        </td>
+                                        <td> 
+                                            <p><a href="/software/S0310">ANDROIDOS_ANSERVER.A</a> uses encrypted content within a blog site for part of its command and control. Specifically, the encrypted content contains URLs for other servers to be used for other aspects of command and control.<span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="TrendMicro-Anserver"><sup><a href="http://blog.trendmicro.com/trendlabs-security-intelligence/android-malware-uses-blog-posts-as-cc/" target="_blank" data-hasqtip="0" aria-describedby="qtip-0">[1]</a></sup></span></p>
+                                        </td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                        <h2 class="pt-3" id ="mitigations">Mitigations</h2>
+                            <p>
+                                This type of attack technique cannot be easily mitigated with preventive controls since
+                                it is based on the abuse of system features.
+                            </p>
+
+                        <h2 class="pt-3" id="references">References</h2>
+                        <div class="row">
+                            <div class="col">
+                                <ol>
+                                            <li>
+                                                <span  id="scite-1" class="scite-citation">
+                                                    <span class="scite-citation-text">
+                                                        <a rel="nofollow" class="external text" name="scite-1" href="https://apowers313.github.io/generic-attackhttp://blog.trendmicro.com/trendlabs-security-intelligence/android-malware-uses-blog-posts-as-cc/" target="_blank">
+                                                            Karl Dominguez. (2011, October 2). Android Malware Uses Blog Posts as C&C. Retrieved February 6, 2017.
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </li>
+                                </ol>
+                            </div>
+                            <div class="col">
+                            </div>             
+                        </div>
+   
+                </div>
+            </div>
+        </div>
+    </div>
+    
+                </div>
+            </div>
+        </div>  
+    </div>
+</div>
+<!--stopindex-->
+<footer class="footer p-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 col-sm-4 col-md-3">  
+                <div class="footer-center-responsive my-auto">
+                    <a href="https://www.mitre.org" target="_blank" rel="noopener" aria-label="MITRE">
+                        <img src="https://apowers313.github.io/generic-attack/theme/images/attackwhiteontrans.gif" class="mitre-logo-wtrans">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2 col-sm-2 footer-responsive-break"></div>
+            <div class="col-6 col-sm-6 text-center">  
+                <p>
+                    blah blah copyright blah.
+                </p>
+                <div class="row">
+                    <div class="col text-right">
+                        <small>
+                            <a href="https://apowers313.github.io/generic-attack/resources/privacy" class="footer-link">Privacy Policy</a>
+                        </small>
+                    </div>
+                    <div class="col text-left">
+                        <small>
+                            <a href="https://apowers313.github.io/generic-attack/resources/terms-of-use" class="footer-link">Terms of Use</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 p-2 footer-responsive-break"></div>
+            <div class="col">
+                <div class="footer-float-right-responsive">
+                    <div class="mb-1">
+                        <a href="https://twitter.com/MITREattack" class="btn btn-primary w-100">
+                            <!-- <i class="fa fa-twitter"></i> -->
+                            <b>BUTTON!</b>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="https://apowers313.github.io/generic-attack/contact" class="btn btn-primary w-100">
+                            <b>BUTTON 2!</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+    <!--SCRIPTS-->
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/jquery-3.2.1.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/popper.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/bootstrap.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/site.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/lunr-2.3.3.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/search.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/index.js"></script>
+
+<!--SCRIPTS-->
+<script src="https://apowers313.github.io/generic-attack/theme/scripts/navigation.js"></script>
+</body>
+
+</html>
+<!--startindex-->

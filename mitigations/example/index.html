@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+        <!-- insert analytics here-->
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel='shortcut icon' href='https://apowers313.github.io/generic-attack/theme/favicon.ico' type='image/x-icon'>
+        <title>Tactics - Example</title>
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='https://apowers313.github.io/generic-attack/theme/style/bootstrap.min.css' />
+        <link rel='stylesheet' href='https://apowers313.github.io/generic-attack/theme/style/bootstrap-glyphicon.min.css' />
+        <link rel="stylesheet" type="text/css" href="https://apowers313.github.io/generic-attack/theme/style.min.css?8cde5623">
+</head>
+
+<body>
+<!--stopindex-->
+<header>
+    
+        <nav class='navbar navbar-expand-lg navbar-dark fixed-top'>
+            <a class='navbar-brand' href='https://apowers313.github.io/generic-attack/'><img src="https://apowers313.github.io/generic-attack/theme/images/attack.png" height="50px"/></a>
+            <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse'
+                    aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+                <span class='navbar-toggler-icon' onclick="search('')"></span>
+            </button>
+            <div class='collapse navbar-collapse' id='navbarCollapse'>
+                <ul class='nav nav-tabs ml-auto'>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/matrices/"  class="nav-link" ><b>Matrices</b></a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/tactics/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Tactics</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/pre">PRE-ATT&CK</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/techniques/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Techniques</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/pre">PRE-ATT&CK</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/mitigations/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Mitigations</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/groups/"  class="nav-link" ><b>Groups</b></a></li>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/software/"  class="nav-link" ><b>Software</b></a></li>
+                </ul>
+                <ul class='navbar-nav flex-row d-md-flex float-right'>
+                    <li>
+                        <form class='form-inline pl-2'>
+                            <input class='form-control' type='text' placeholder='Search site' aria-label='Search' id="search"
+                                   autocomplete="off">
+                        </form>
+                        <div class="search-results"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+        <!-- don't edit or remove the line below even though it's commented out, it gets parsed and replaced by the previous-versions feature -->
+        <!-- !previous versions banner! -->
+        <!--startindex-->
+<div id='content'>    <div class='container-fluid'>
+        <div class='row'>
+ 
+             
+            <div class="nav flex-column col-xl-2 col-lg-3 col-md-3  sidebar nav pt-5 pb-3 pl-3 border-right" id="v-tab" role="tablist" aria-orientation="vertical">
+<!--stopindex-->
+        <button class="btn btn-default dropdown-toggle heading-dropdown mb-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EXAMPLE</button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/enterprise">ENTERPRISE</a>
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/mobile">MOBILE</a>
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/example">EXAMPLE</a>
+    </div>
+    <div class="group-nav-desktop-view">
+        <span class="heading" id="v-home-tab" aria-selected="false">MITIGATIONS</span>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head active" id="0-0">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/example/">Overview</a>
+            </div>
+</div>
+
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Example 'mitigation' or course of action.-Example 'mitigation' or course of action.">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M0001/">Example 'mitigation' or course of action.</a>
+            </div>
+</div>
+
+
+    </div>
+    <div class="group-nav-mobile-view">
+        <span class="heading" id="v-home-tab" aria-selected="false">MITIGATIONS</span>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head active" id="0-0">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/example/">Overview</a>
+            </div>
+</div>
+
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="ebc49681d5e941158903e26dddfc57fb">
+                <span>A-C</span>
+            <div class="expand-button collapsed" id="ebc49681d5e941158903e26dddfc57fb-header" data-toggle="collapse" data-target="#ebc49681d5e941158903e26dddfc57fb-body" aria-expanded="false" aria-controls="#ebc49681d5e941158903e26dddfc57fb-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="ebc49681d5e941158903e26dddfc57fb-body" aria-labelledby="ebc49681d5e941158903e26dddfc57fb-header">
+                    
+<div class="sidenav">
+            <span>No mitigations</span>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="35ad1b388e994b0da43085c33c929f3e">
+                <span>D-F</span>
+            <div class="expand-button collapsed" id="35ad1b388e994b0da43085c33c929f3e-header" data-toggle="collapse" data-target="#35ad1b388e994b0da43085c33c929f3e-body" aria-expanded="false" aria-controls="#35ad1b388e994b0da43085c33c929f3e-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="35ad1b388e994b0da43085c33c929f3e-body" aria-labelledby="35ad1b388e994b0da43085c33c929f3e-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="35ad1b388e994b0da43085c33c929f3e-aa71e3b5d5564f968eaeb09d02db5120">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M0001/">Example 'mitigation' or course of action.</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="c91d561cf53c422092b3f7fcc88a8e9b">
+                <span>G-I</span>
+            <div class="expand-button collapsed" id="c91d561cf53c422092b3f7fcc88a8e9b-header" data-toggle="collapse" data-target="#c91d561cf53c422092b3f7fcc88a8e9b-body" aria-expanded="false" aria-controls="#c91d561cf53c422092b3f7fcc88a8e9b-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="c91d561cf53c422092b3f7fcc88a8e9b-body" aria-labelledby="c91d561cf53c422092b3f7fcc88a8e9b-header">
+                    
+<div class="sidenav">
+            <span>No mitigations</span>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="638b01b8f3ed48919fe891998f8dcae9">
+                <span>J-L</span>
+            <div class="expand-button collapsed" id="638b01b8f3ed48919fe891998f8dcae9-header" data-toggle="collapse" data-target="#638b01b8f3ed48919fe891998f8dcae9-body" aria-expanded="false" aria-controls="#638b01b8f3ed48919fe891998f8dcae9-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="638b01b8f3ed48919fe891998f8dcae9-body" aria-labelledby="638b01b8f3ed48919fe891998f8dcae9-header">
+                    
+<div class="sidenav">
+            <span>No mitigations</span>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="f0ca66b7984a4ee797e7b49eac7b9c58">
+                <span>M-O</span>
+            <div class="expand-button collapsed" id="f0ca66b7984a4ee797e7b49eac7b9c58-header" data-toggle="collapse" data-target="#f0ca66b7984a4ee797e7b49eac7b9c58-body" aria-expanded="false" aria-controls="#f0ca66b7984a4ee797e7b49eac7b9c58-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="f0ca66b7984a4ee797e7b49eac7b9c58-body" aria-labelledby="f0ca66b7984a4ee797e7b49eac7b9c58-header">
+                    
+<div class="sidenav">
+            <span>No mitigations</span>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="56d7fbf66fcd485ab2cc24f32eeb526c">
+                <span>P-R</span>
+            <div class="expand-button collapsed" id="56d7fbf66fcd485ab2cc24f32eeb526c-header" data-toggle="collapse" data-target="#56d7fbf66fcd485ab2cc24f32eeb526c-body" aria-expanded="false" aria-controls="#56d7fbf66fcd485ab2cc24f32eeb526c-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="56d7fbf66fcd485ab2cc24f32eeb526c-body" aria-labelledby="56d7fbf66fcd485ab2cc24f32eeb526c-header">
+                    
+<div class="sidenav">
+            <span>No mitigations</span>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="05e62bd7f2ad41dc9bf3a040a6b96de8">
+                <span>S-U</span>
+            <div class="expand-button collapsed" id="05e62bd7f2ad41dc9bf3a040a6b96de8-header" data-toggle="collapse" data-target="#05e62bd7f2ad41dc9bf3a040a6b96de8-body" aria-expanded="false" aria-controls="#05e62bd7f2ad41dc9bf3a040a6b96de8-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="05e62bd7f2ad41dc9bf3a040a6b96de8-body" aria-labelledby="05e62bd7f2ad41dc9bf3a040a6b96de8-header">
+                    
+<div class="sidenav">
+            <span>No mitigations</span>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="27b82c513e6b4644957c85f99a9df406">
+                <span>V-X</span>
+            <div class="expand-button collapsed" id="27b82c513e6b4644957c85f99a9df406-header" data-toggle="collapse" data-target="#27b82c513e6b4644957c85f99a9df406-body" aria-expanded="false" aria-controls="#27b82c513e6b4644957c85f99a9df406-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="27b82c513e6b4644957c85f99a9df406-body" aria-labelledby="27b82c513e6b4644957c85f99a9df406-header">
+                    
+<div class="sidenav">
+            <span>No mitigations</span>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="35e963d70bbd4693beaa89e062fa8c30">
+                <span>Y-Z</span>
+            <div class="expand-button collapsed" id="35e963d70bbd4693beaa89e062fa8c30-header" data-toggle="collapse" data-target="#35e963d70bbd4693beaa89e062fa8c30-body" aria-expanded="false" aria-controls="#35e963d70bbd4693beaa89e062fa8c30-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="35e963d70bbd4693beaa89e062fa8c30-body" aria-labelledby="35e963d70bbd4693beaa89e062fa8c30-header">
+                    
+<div class="sidenav">
+            <span>No mitigations</span>
+</div>
+
+        </div>
+</div>
+
+ 
+    </div>
+<!--startindex-->
+            </div>
+             
+            <div class="tab-content col-xl-10 col-lg-9 col-md-9 pt-4" id="v-tabContent">
+                <div class="tab-pane fade show active" id="v-attckmatrix" role="tabpanel" aria-labelledby="v-attckmatrix-tab">
+    
+    <!--stopindex-->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/">Home</a></li>
+        <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/mitigations/enterprise/">Mitigations</a></li>
+            <li class="breadcrumb-item">Enterprise</li>
+    </ol>
+    <div class="tab-pane fade show active" id="v-" role="tabpanel" aria-labelledby="v--tab"></div>
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container-fluid">
+                    <div class="overflow-x-auto">
+                        <h1>
+ 
+                                Enterprise Mitigations
+                        </h1>
+
+                        <h6 class="table-object-count">Mitigations: 1</h6>
+                        <table class="table table-bordered table-alternate mt-2">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/mitigations/M0001"> M0001 </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/mitigations/M0001"> Example 'mitigation' or course of action. </a>
+                                    </td>
+                                    <td>
+                                        <p>Just an example of a mitigation.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--startindex-->
+                </div>
+            </div>
+        </div>  
+    </div>
+</div>
+<!--stopindex-->
+<footer class="footer p-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 col-sm-4 col-md-3">  
+                <div class="footer-center-responsive my-auto">
+                    <a href="https://www.mitre.org" target="_blank" rel="noopener" aria-label="MITRE">
+                        <img src="https://apowers313.github.io/generic-attack/theme/images/attackwhiteontrans.gif" class="mitre-logo-wtrans">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2 col-sm-2 footer-responsive-break"></div>
+            <div class="col-6 col-sm-6 text-center">  
+                <p>
+                    blah blah copyright blah.
+                </p>
+                <div class="row">
+                    <div class="col text-right">
+                        <small>
+                            <a href="https://apowers313.github.io/generic-attack/resources/privacy" class="footer-link">Privacy Policy</a>
+                        </small>
+                    </div>
+                    <div class="col text-left">
+                        <small>
+                            <a href="https://apowers313.github.io/generic-attack/resources/terms-of-use" class="footer-link">Terms of Use</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 p-2 footer-responsive-break"></div>
+            <div class="col">
+                <div class="footer-float-right-responsive">
+                    <div class="mb-1">
+                        <a href="https://twitter.com/MITREattack" class="btn btn-primary w-100">
+                            <!-- <i class="fa fa-twitter"></i> -->
+                            <b>BUTTON!</b>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="https://apowers313.github.io/generic-attack/contact" class="btn btn-primary w-100">
+                            <b>BUTTON 2!</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+        <!--SCRIPTS-->
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/jquery-3.2.1.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/popper.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/bootstrap.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/site.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/lunr-2.3.3.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/search.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/index.js"></script>
+
+    <!--SCRIPTS-->
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/navigation.js"></script>
+</body>
+
+</html>
+<!--startindex-->

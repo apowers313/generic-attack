@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+        <!-- insert analytics here-->
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel='shortcut icon' href='https://apowers313.github.io/generic-attack/theme/favicon.ico' type='image/x-icon'>
+        <title>Organizational Information Gathering - PRE-ATT&CK | MITRE ATT&CK&trade;</title>
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='https://apowers313.github.io/generic-attack/theme/style/bootstrap.min.css' />
+        <link rel='stylesheet' href='https://apowers313.github.io/generic-attack/theme/style/bootstrap-glyphicon.min.css' />
+        <link rel="stylesheet" type="text/css" href="https://apowers313.github.io/generic-attack/theme/style.min.css?8cde5623">
+</head>
+
+<body>
+<!--stopindex-->
+<header>
+    
+        <nav class='navbar navbar-expand-lg navbar-dark fixed-top'>
+            <a class='navbar-brand' href='https://apowers313.github.io/generic-attack/'><img src="https://apowers313.github.io/generic-attack/theme/images/attack.png" height="50px"/></a>
+            <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse'
+                    aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+                <span class='navbar-toggler-icon' onclick="search('')"></span>
+            </button>
+            <div class='collapse navbar-collapse' id='navbarCollapse'>
+                <ul class='nav nav-tabs ml-auto'>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/matrices/"  class="nav-link" ><b>Matrices</b></a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/tactics/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Tactics</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/pre">PRE-ATT&CK</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/techniques/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Techniques</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/pre">PRE-ATT&CK</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/mitigations/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Mitigations</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/groups/"  class="nav-link" ><b>Groups</b></a></li>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/software/"  class="nav-link" ><b>Software</b></a></li>
+                </ul>
+                <ul class='navbar-nav flex-row d-md-flex float-right'>
+                    <li>
+                        <form class='form-inline pl-2'>
+                            <input class='form-control' type='text' placeholder='Search site' aria-label='Search' id="search"
+                                   autocomplete="off">
+                        </form>
+                        <div class="search-results"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+        <!-- don't edit or remove the line below even though it's commented out, it gets parsed and replaced by the previous-versions feature -->
+        <!-- !previous versions banner! -->
+        <!--startindex-->
+<div id='content'>    <div class='container-fluid'>
+        <div class='row'>
+ 
+             
+            <div class="nav flex-column col-xl-2 col-lg-3 col-md-3  sidebar nav pt-5 pb-3 pl-3 border-right" id="v-tab" role="tablist" aria-orientation="vertical">
+<!--stopindex-->
+        <button class="btn btn-default dropdown-toggle heading-dropdown mb-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRE-ATT&CK</button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/enterprise">ENTERPRISE</a>
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/mobile">MOBILE</a>
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/example">EXAMPLE</a>
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/pre">PRE-ATT&CK</a>
+    </div>
+    <div class="group-nav-desktop-view">
+        <span class="heading" id="v-home-tab" aria-selected="false">TACTICS</span>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="0-0">
+                <a href="https://apowers313.github.io/generic-attack/tactics/pre/">Overview</a>
+            </div>
+</div>
+
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Priority Definition Planning-Priority Definition Planning">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0012/">Priority Definition Planning</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Priority Definition Direction-Priority Definition Direction">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0013/">Priority Definition Direction</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Target Selection-Target Selection">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0014/">Target Selection</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Technical Information Gathering-Technical Information Gathering">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0015/">Technical Information Gathering</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="People Information Gathering-People Information Gathering">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0016/">People Information Gathering</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head active" id="Organizational Information Gathering-Organizational Information Gathering">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0017/">Organizational Information Gathering</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Technical Weakness Identification-Technical Weakness Identification">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0018/">Technical Weakness Identification</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="People Weakness Identification-People Weakness Identification">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0019/">People Weakness Identification</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Organizational Weakness Identification-Organizational Weakness Identification">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0020/">Organizational Weakness Identification</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Adversary OPSEC-Adversary OPSEC">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0021/">Adversary OPSEC</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Establish & Maintain Infrastructure-Establish & Maintain Infrastructure">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0022/">Establish & Maintain Infrastructure</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Persona Development-Persona Development">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0023/">Persona Development</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Build Capabilities-Build Capabilities">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0024/">Build Capabilities</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Test Capabilities-Test Capabilities">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0025/">Test Capabilities</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Stage Capabilities-Stage Capabilities">
+                <a href="https://apowers313.github.io/generic-attack/tactics/TA0026/">Stage Capabilities</a>
+            </div>
+</div>
+
+
+    </div>
+<!--startindex-->
+            </div>
+             
+            <div class="tab-content col-xl-10 col-lg-9 col-md-9 pt-4" id="v-tabContent">
+                <div class="tab-pane fade show active" id="v-attckmatrix" role="tabpanel" aria-labelledby="v-attckmatrix-tab">
+    
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/">Home</a></li>
+            <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/tactics/pre">Tactics</a></li>
+            <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/tactics/pre">PRE-ATT&CK</a></li>
+        <li class="breadcrumb-item">Organizational Information Gathering</li>
+    </ol>
+    <div class="tab-pane fade show active" id="v-" role="tabpanel" aria-labelledby="v--tab"></div>
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container-fluid">
+                    <h1>
+                        Organizational Information Gathering
+                    </h1>
+                    <div class="row">
+                        <div class="col-md-8 description-body">
+                            <p>Organizational information gathering consists of the process of identifying critical organizational elements of intelligence an adversary will need about a target in order to best attack.  Similar to competitive intelligence, organizational intelligence gathering focuses on understanding the operational tempo of an organization and gathering a deep understanding of the organization and how it operates, in order to best develop a strategy to target it.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-data"><span class="h5 card-title">ID:</span> TA0017</div>                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="pt-3" id ="techniques">Techniques</h2><h6 class="table-object-count">Techniques: 11</h6>
+                    <table class="table table-bordered table-alternate mt-2">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Acquire OSINT data sets and information-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1277"> T1277 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Acquire OSINT data sets and information-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1277"> Acquire OSINT data sets and information </a>
+                                    </td>
+                                    <td>
+                                        <p>Data sets can be anything from Security Exchange Commission (SEC) filings to public phone numbers. Many datasets are now either publicly available for free or can be purchased from a variety of data vendors.  Open source intelligence (OSINT) is intelligence gathered from publicly available sources. This can include both information gathered on-line as well as in the physical world.   </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Conduct social engineering-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1279"> T1279 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Conduct social engineering-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1279"> Conduct social engineering </a>
+                                    </td>
+                                    <td>
+                                        <p>Social Engineering is the practice of manipulating people in order to get them to divulge information or take an action.  </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Determine 3rd party infrastructure services-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1284"> T1284 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Determine 3rd party infrastructure services-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1284"> Determine 3rd party infrastructure services </a>
+                                    </td>
+                                    <td>
+                                        <p>A wide variety of cloud, virtual private services, hosting, compute, and storage solutions are available as 3rd party infrastructure services. These services could provide an adversary with another avenue of approach or compromise.   </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Determine centralization of IT management-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1285"> T1285 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Determine centralization of IT management-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1285"> Determine centralization of IT management </a>
+                                    </td>
+                                    <td>
+                                        <p>Determining if a "corporate" help desk exists, the degree of access and control it has, and whether there are "edge" units that may have different support processes and standards. </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Determine physical locations-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1282"> T1282 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Determine physical locations-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1282"> Determine physical locations </a>
+                                    </td>
+                                    <td>
+                                        <p>Physical locality information may be used by an adversary to shape social engineering attempts (language, culture, events, weather, etc.) or to plan for physical actions such as dumpster diving or attempting to access a facility. </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Dumpster dive-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1286"> T1286 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Dumpster dive-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1286"> Dumpster dive </a>
+                                    </td>
+                                    <td>
+                                        <p>Dumpster diving is looking through waste for information on technology, people, and/or organizational items of interest. </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Identify business processes/tempo-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1280"> T1280 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Identify business processes/tempo-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1280"> Identify business processes/tempo </a>
+                                    </td>
+                                    <td>
+                                        <p>Understanding an organizations business processes and tempo may allow an adversary to more effectively craft social engineering attempts or to better hide technical actions, such as those that generate network traffic.  </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Identify business relationships-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1283"> T1283 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Identify business relationships-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1283"> Identify business relationships </a>
+                                    </td>
+                                    <td>
+                                        <p>Business relationship information may be used by an adversary to shape social engineering attempts (exploiting who a target expects to hear from) or to plan for technical actions such as exploiting network trust relationship. </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Identify job postings and needs/gaps-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1278"> T1278 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Identify job postings and needs/gaps-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1278"> Identify job postings and needs/gaps </a>
+                                    </td>
+                                    <td>
+                                        <p>Job postings, on either company sites, or in other forums, provide information on organizational structure, needs, and gaps in an organization. This may give an adversary an indication of weakness in an organization (such as under-resourced IT shop). Job postings can also provide information on an organizations structure which could be valuable in social engineering attempts.  </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Identify supply chains-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1276"> T1276 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Identify supply chains-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1276"> Identify supply chains </a>
+                                    </td>
+                                    <td>
+                                        <p>Supply chains include the people, processes, and technologies used to move a product or service from a supplier to a consumer. Understanding supply chains may provide an adversary with opportunities to exploit organizational relationships.  </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Obtain templates/branding materials-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1281"> T1281 </a>
+                                    </td>
+                                    <td>
+                                        <a class="technique-mapping" id="v-Obtain templates/branding materials-organizational information gathering-tab" href="https://apowers313.github.io/generic-attack/techniques/T1281"> Obtain templates/branding materials </a>
+                                    </td>
+                                    <td>
+                                        <p>Templates and branding materials may be used by an adversary to add authenticity to social engineering message. </p>
+                                    </td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+                </div>
+            </div>
+        </div>  
+    </div>
+</div>
+<!--stopindex-->
+<footer class="footer p-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 col-sm-4 col-md-3">  
+                <div class="footer-center-responsive my-auto">
+                    <a href="https://www.mitre.org" target="_blank" rel="noopener" aria-label="MITRE">
+                        <img src="https://apowers313.github.io/generic-attack/theme/images/attackwhiteontrans.gif" class="mitre-logo-wtrans">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2 col-sm-2 footer-responsive-break"></div>
+            <div class="col-6 col-sm-6 text-center">  
+                <p>
+                    blah blah copyright blah.
+                </p>
+                <div class="row">
+                    <div class="col text-right">
+                        <small>
+                            <a href="https://apowers313.github.io/generic-attack/resources/privacy" class="footer-link">Privacy Policy</a>
+                        </small>
+                    </div>
+                    <div class="col text-left">
+                        <small>
+                            <a href="https://apowers313.github.io/generic-attack/resources/terms-of-use" class="footer-link">Terms of Use</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 p-2 footer-responsive-break"></div>
+            <div class="col">
+                <div class="footer-float-right-responsive">
+                    <div class="mb-1">
+                        <a href="https://twitter.com/MITREattack" class="btn btn-primary w-100">
+                            <!-- <i class="fa fa-twitter"></i> -->
+                            <b>BUTTON!</b>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="https://apowers313.github.io/generic-attack/contact" class="btn btn-primary w-100">
+                            <b>BUTTON 2!</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+        <!--SCRIPTS-->
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/jquery-3.2.1.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/popper.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/bootstrap.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/site.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/lunr-2.3.3.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/search.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/index.js"></script>
+
+    <!--SCRIPTS-->
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/navigation.js"></script>
+</body>
+
+</html>
+<!--startindex-->

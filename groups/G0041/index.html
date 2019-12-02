@@ -1,0 +1,1899 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+        <!-- insert analytics here-->
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel='shortcut icon' href='https://apowers313.github.io/generic-attack/theme/favicon.ico' type='image/x-icon'>
+        <title>Strider, ProjectSauron | MITRE ATT&CK&trade;</title>
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='https://apowers313.github.io/generic-attack/theme/style/bootstrap.min.css' />
+        <link rel='stylesheet' href='https://apowers313.github.io/generic-attack/theme/style/bootstrap-glyphicon.min.css' />
+        <link rel="stylesheet" type="text/css" href="https://apowers313.github.io/generic-attack/theme/style.min.css?8cde5623">
+</head>
+
+<body>
+<!--stopindex-->
+<header>
+    
+        <nav class='navbar navbar-expand-lg navbar-dark fixed-top'>
+            <a class='navbar-brand' href='https://apowers313.github.io/generic-attack/'><img src="https://apowers313.github.io/generic-attack/theme/images/attack.png" height="50px"/></a>
+            <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse'
+                    aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+                <span class='navbar-toggler-icon' onclick="search('')"></span>
+            </button>
+            <div class='collapse navbar-collapse' id='navbarCollapse'>
+                <ul class='nav nav-tabs ml-auto'>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/matrices/"  class="nav-link" ><b>Matrices</b></a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/tactics/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Tactics</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/pre">PRE-ATT&CK</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/techniques/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Techniques</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/pre">PRE-ATT&CK</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/mitigations/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Mitigations</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/groups/"  class="nav-link active" ><b>Groups</b></a></li>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/software/"  class="nav-link" ><b>Software</b></a></li>
+                </ul>
+                <ul class='navbar-nav flex-row d-md-flex float-right'>
+                    <li>
+                        <form class='form-inline pl-2'>
+                            <input class='form-control' type='text' placeholder='Search site' aria-label='Search' id="search"
+                                   autocomplete="off">
+                        </form>
+                        <div class="search-results"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+        <!-- don't edit or remove the line below even though it's commented out, it gets parsed and replaced by the previous-versions feature -->
+        <!-- !previous versions banner! -->
+        <!--startindex-->
+<div id='content'>    <div class='container-fluid'>
+        <div class='row'>
+ 
+             
+            <div class="nav flex-column col-xl-2 col-lg-3 col-md-3  sidebar nav pt-5 pb-3 pl-3 border-right" id="v-tab" role="tablist" aria-orientation="vertical">
+<!--stopindex-->
+    <div class="group-nav-desktop-view">
+        <span class="heading" id="v-home-tab" aria-selected="false">GROUPS</span>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="0-0">
+                <a href="https://apowers313.github.io/generic-attack/groups/">Overview</a>
+            </div>
+</div>
+
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="admin@338-admin@338">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0018/">admin@338</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Angry Iguana-Angry Iguana">
+                <a href="https://apowers313.github.io/generic-attack/groups/TA0001/">Angry Iguana</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="APT1-APT1">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0006/">APT1</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="APT12-APT12">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0005/">APT12</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="APT16-APT16">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0023/">APT16</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="APT17-APT17">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0025/">APT17</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="APT18-APT18">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0026/">APT18</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="APT19-APT19">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0073/">APT19</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="APT28-APT28">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0007/">APT28</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="APT29-APT29">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0016/">APT29</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="APT3-APT3">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0022/">APT3</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="APT30-APT30">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0013/">APT30</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="APT32-APT32">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0050/">APT32</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="APT33-APT33">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0064/">APT33</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="APT37-APT37">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0067/">APT37</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="APT38-APT38">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0082/">APT38</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="APT39-APT39">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0087/">APT39</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="APT41-APT41">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0096/">APT41</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Axiom-Axiom">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0001/">Axiom</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="BlackOasis-BlackOasis">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0063/">BlackOasis</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="BRONZE BUTLER-BRONZE BUTLER">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0060/">BRONZE BUTLER</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Carbanak-Carbanak">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0008/">Carbanak</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Charming Kitten-Charming Kitten">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0058/">Charming Kitten</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Cleaver-Cleaver">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0003/">Cleaver</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Cobalt Group-Cobalt Group">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0080/">Cobalt Group</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="CopyKittens-CopyKittens">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0052/">CopyKittens</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Dark Caracal-Dark Caracal">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0070/">Dark Caracal</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Darkhotel-Darkhotel">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0012/">Darkhotel</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="DarkHydrus-DarkHydrus">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0079/">DarkHydrus</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Deep Panda-Deep Panda">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0009/">Deep Panda</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Dragonfly-Dragonfly">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0035/">Dragonfly</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Dragonfly 2.0-Dragonfly 2.0">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0074/">Dragonfly 2.0</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="DragonOK-DragonOK">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0017/">DragonOK</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Dust Storm-Dust Storm">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0031/">Dust Storm</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Elderwood-Elderwood">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0066/">Elderwood</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Equation-Equation">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0020/">Equation</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="FIN10-FIN10">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0051/">FIN10</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="FIN4-FIN4">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0085/">FIN4</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="FIN5-FIN5">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0053/">FIN5</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="FIN6-FIN6">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0037/">FIN6</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="FIN7-FIN7">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0046/">FIN7</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="FIN8-FIN8">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0061/">FIN8</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Gallmaker-Gallmaker">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0084/">Gallmaker</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Gamaredon Group-Gamaredon Group">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0047/">Gamaredon Group</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="GCMAN-GCMAN">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0036/">GCMAN</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Gorgon Group-Gorgon Group">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0078/">Gorgon Group</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Group5-Group5">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0043/">Group5</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Honeybee-Honeybee">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0072/">Honeybee</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Ke3chang-Ke3chang">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0004/">Ke3chang</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Kimsuky-Kimsuky">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0094/">Kimsuky</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Lazarus Group-Lazarus Group">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0032/">Lazarus Group</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Leafminer-Leafminer">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0077/">Leafminer</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Leviathan-Leviathan">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0065/">Leviathan</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Lotus Blossom-Lotus Blossom">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0030/">Lotus Blossom</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Machete-Machete">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0095/">Machete</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Magic Hound-Magic Hound">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0059/">Magic Hound</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="menuPass-menuPass">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0045/">menuPass</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Moafee-Moafee">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0002/">Moafee</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Molerats-Molerats">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0021/">Molerats</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="MuddyWater-MuddyWater">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0069/">MuddyWater</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Naikon-Naikon">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0019/">Naikon</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="NEODYMIUM-NEODYMIUM">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0055/">NEODYMIUM</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Night Dragon-Night Dragon">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0014/">Night Dragon</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="OilRig-OilRig">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0049/">OilRig</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Orangeworm-Orangeworm">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0071/">Orangeworm</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Patchwork-Patchwork">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0040/">Patchwork</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="PittyTiger-PittyTiger">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0011/">PittyTiger</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="PLATINUM-PLATINUM">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0068/">PLATINUM</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Poseidon Group-Poseidon Group">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0033/">Poseidon Group</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="PROMETHIUM-PROMETHIUM">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0056/">PROMETHIUM</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Putter Panda-Putter Panda">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0024/">Putter Panda</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Rancor-Rancor">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0075/">Rancor</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="RTM-RTM">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0048/">RTM</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Sandworm Team-Sandworm Team">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0034/">Sandworm Team</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Scarlet Mimic-Scarlet Mimic">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0029/">Scarlet Mimic</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Silence-Silence">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0091/">Silence</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="SilverTerrier-SilverTerrier">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0083/">SilverTerrier</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Soft Cell-Soft Cell">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0093/">Soft Cell</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Sowbug-Sowbug">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0054/">Sowbug</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Stealth Falcon-Stealth Falcon">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0038/">Stealth Falcon</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Stolen Pencil-Stolen Pencil">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0086/">Stolen Pencil</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head active" id="Strider-Strider">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0041/">Strider</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Suckfly-Suckfly">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0039/">Suckfly</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA459-TA459">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0062/">TA459</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="TA505-TA505">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0092/">TA505</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Taidoor-Taidoor">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0015/">Taidoor</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="TEMP.Veles-TEMP.Veles">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0088/">TEMP.Veles</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="The White Company-The White Company">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0089/">The White Company</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Threat Group-1314-Threat Group-1314">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0028/">Threat Group-1314</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Threat Group-3390-Threat Group-3390">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0027/">Threat Group-3390</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Thrip-Thrip">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0076/">Thrip</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Tropic Trooper-Tropic Trooper">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0081/">Tropic Trooper</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Turla-Turla">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0010/">Turla</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Winnti Group-Winnti Group">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0044/">Winnti Group</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="WIRTE-WIRTE">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0090/">WIRTE</a>
+            </div>
+</div>
+
+ 
+    </div>
+    <div class="group-nav-mobile-view">
+        <span class="heading" id="v-home-tab" aria-selected="false">GROUPS</span>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="0-0">
+                <a href="https://apowers313.github.io/generic-attack/groups/">Overview</a>
+            </div>
+</div>
+
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="0fd0e105575040e1a7b098a8e3e0978b">
+                <span>A-B</span>
+            <div class="expand-button collapsed" id="0fd0e105575040e1a7b098a8e3e0978b-header" data-toggle="collapse" data-target="#0fd0e105575040e1a7b098a8e3e0978b-body" aria-expanded="false" aria-controls="#0fd0e105575040e1a7b098a8e3e0978b-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="0fd0e105575040e1a7b098a8e3e0978b-body" aria-labelledby="0fd0e105575040e1a7b098a8e3e0978b-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-c8b041654eda4732bdb7c81b647320ce">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0018/">admin@338</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-4c30228bcfa74862b81a02206744a623">
+                <a href="https://apowers313.github.io/generic-attack/groups/TA0001/">Angry Iguana</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-f7c0b8e78fa14753ae4b4b8e43ca8615">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0006/">APT1</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-086276bd85fb48499007038b0dd3f60f">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0005/">APT12</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-2ec05779d6274bb7a33f64b7545d985e">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0023/">APT16</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-56e970fafc4a4ecb8c58cfa5fa874359">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0025/">APT17</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-57040f9fd44d44498bc7902037fcc8c0">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0026/">APT18</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-e186114128734b739d6b891bb6c9dde0">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0073/">APT19</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-b11c57245c2142c1aed057edffd236a2">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0007/">APT28</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-6e36ccf0749a4af8b4ba6794f5883810">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0016/">APT29</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-4a2be7a5d2bb4866ba4a6006431b9a39">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0022/">APT3</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-5cba92fb4415405bac809649b0605192">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0013/">APT30</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-01a76dca49724164856f4988bc9b3c0f">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0050/">APT32</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-c44ca81e6ff3428c84e2af3c8c414986">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0064/">APT33</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-887797c4e0b74aa8b0d40a77fb278098">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0067/">APT37</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-6f71e855621f44cd82b4f8cb18cb14bb">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0082/">APT38</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-babf4d0c5c084c1c9ac840d264b77ec0">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0087/">APT39</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-89a236526f4046478cc903c4d925a516">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0096/">APT41</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-7c9ece4bea434d23935281056a05e6d6">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0001/">Axiom</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-f9cfb9cb84224f6baf74cd89c49d1512">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0063/">BlackOasis</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0fd0e105575040e1a7b098a8e3e0978b-472afb9ca4294f4a9ca9b37fe39434e4">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0060/">BRONZE BUTLER</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="2e74a6adb6064e9793045c2bff45de86">
+                <span>C-D</span>
+            <div class="expand-button collapsed" id="2e74a6adb6064e9793045c2bff45de86-header" data-toggle="collapse" data-target="#2e74a6adb6064e9793045c2bff45de86-body" aria-expanded="false" aria-controls="#2e74a6adb6064e9793045c2bff45de86-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="2e74a6adb6064e9793045c2bff45de86-body" aria-labelledby="2e74a6adb6064e9793045c2bff45de86-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="2e74a6adb6064e9793045c2bff45de86-ce0aad8b368741319dde66ca9548a6cb">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0008/">Carbanak</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="2e74a6adb6064e9793045c2bff45de86-3fd4801f5c1041c8b348443b6d81967b">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0058/">Charming Kitten</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="2e74a6adb6064e9793045c2bff45de86-4dcd21c50a7f4ea9849f656f4afd2445">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0003/">Cleaver</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="2e74a6adb6064e9793045c2bff45de86-8ea25c1caa334743b08b8f00457edfd1">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0080/">Cobalt Group</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="2e74a6adb6064e9793045c2bff45de86-fc61520da744474ba28d7425a0edee27">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0052/">CopyKittens</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="2e74a6adb6064e9793045c2bff45de86-f4d45d1e1f1e4b42b370dc16654cc7a6">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0070/">Dark Caracal</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="2e74a6adb6064e9793045c2bff45de86-5a421f0539914458876bc07d5163afa1">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0012/">Darkhotel</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="2e74a6adb6064e9793045c2bff45de86-5a9ffa7a9b5c4063b593e95e8abdef02">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0079/">DarkHydrus</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="2e74a6adb6064e9793045c2bff45de86-023e4ef9a050440e9c1d165e681d7599">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0009/">Deep Panda</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="2e74a6adb6064e9793045c2bff45de86-446c7c15d04f4f70a85d4d61f621bc30">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0035/">Dragonfly</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="2e74a6adb6064e9793045c2bff45de86-6e8ae29ec7524ae38caafae7f7b032a1">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0074/">Dragonfly 2.0</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="2e74a6adb6064e9793045c2bff45de86-11c6f80ff152415bb16198d4a14c148c">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0017/">DragonOK</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="2e74a6adb6064e9793045c2bff45de86-116a1577fdfe40ec92321cfddff9720e">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0031/">Dust Storm</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="b59fa60d90824ecb963d07dc492f8062">
+                <span>E-F</span>
+            <div class="expand-button collapsed" id="b59fa60d90824ecb963d07dc492f8062-header" data-toggle="collapse" data-target="#b59fa60d90824ecb963d07dc492f8062-body" aria-expanded="false" aria-controls="#b59fa60d90824ecb963d07dc492f8062-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="b59fa60d90824ecb963d07dc492f8062-body" aria-labelledby="b59fa60d90824ecb963d07dc492f8062-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="b59fa60d90824ecb963d07dc492f8062-de7817771f63461d9f9d7de0e4b600c8">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0066/">Elderwood</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="b59fa60d90824ecb963d07dc492f8062-a81500337c7c421e8915544ac2296dec">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0020/">Equation</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="b59fa60d90824ecb963d07dc492f8062-cba572b656514668a884a77e0ca85642">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0051/">FIN10</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="b59fa60d90824ecb963d07dc492f8062-dda5d3022cca4c8099f5317f21569872">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0085/">FIN4</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="b59fa60d90824ecb963d07dc492f8062-bd4d62717ed44dd4bf9781238fb18d78">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0053/">FIN5</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="b59fa60d90824ecb963d07dc492f8062-3c1c430566c1481d8c6d3f3d84f26888">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0037/">FIN6</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="b59fa60d90824ecb963d07dc492f8062-e5d0e142e3434371a7fe5b408b931735">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0046/">FIN7</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="b59fa60d90824ecb963d07dc492f8062-edb683cf5d574612a955cacaf39d6f15">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0061/">FIN8</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="77d27e1fe0824de8843d524aa76344cb">
+                <span>G-H</span>
+            <div class="expand-button collapsed" id="77d27e1fe0824de8843d524aa76344cb-header" data-toggle="collapse" data-target="#77d27e1fe0824de8843d524aa76344cb-body" aria-expanded="false" aria-controls="#77d27e1fe0824de8843d524aa76344cb-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="77d27e1fe0824de8843d524aa76344cb-body" aria-labelledby="77d27e1fe0824de8843d524aa76344cb-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="77d27e1fe0824de8843d524aa76344cb-bc0917e8aa0843e2b61404468ee7c16a">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0084/">Gallmaker</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="77d27e1fe0824de8843d524aa76344cb-5c55c6546d09454d9d3c495e3108829c">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0047/">Gamaredon Group</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="77d27e1fe0824de8843d524aa76344cb-f10e3856d83e432da53295e077376f17">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0036/">GCMAN</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="77d27e1fe0824de8843d524aa76344cb-11aaf1db58e748a1815471061afab3af">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0078/">Gorgon Group</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="77d27e1fe0824de8843d524aa76344cb-effc617da77948ccab307293a9f7a77e">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0043/">Group5</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="77d27e1fe0824de8843d524aa76344cb-9a543654cfb042178685982ca655e25f">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0072/">Honeybee</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="dc2f55f8d9c6439c8927cd3c4263b997">
+                <span>I-J</span>
+            <div class="expand-button collapsed" id="dc2f55f8d9c6439c8927cd3c4263b997-header" data-toggle="collapse" data-target="#dc2f55f8d9c6439c8927cd3c4263b997-body" aria-expanded="false" aria-controls="#dc2f55f8d9c6439c8927cd3c4263b997-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="dc2f55f8d9c6439c8927cd3c4263b997-body" aria-labelledby="dc2f55f8d9c6439c8927cd3c4263b997-header">
+                    
+<div class="sidenav">
+            <span>No groups</span>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="0c13e54aadd34a7c9b2ffa18cef9d27b">
+                <span>K-L</span>
+            <div class="expand-button collapsed" id="0c13e54aadd34a7c9b2ffa18cef9d27b-header" data-toggle="collapse" data-target="#0c13e54aadd34a7c9b2ffa18cef9d27b-body" aria-expanded="false" aria-controls="#0c13e54aadd34a7c9b2ffa18cef9d27b-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="0c13e54aadd34a7c9b2ffa18cef9d27b-body" aria-labelledby="0c13e54aadd34a7c9b2ffa18cef9d27b-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0c13e54aadd34a7c9b2ffa18cef9d27b-5259cb2468324a6996104a8daad4a829">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0004/">Ke3chang</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0c13e54aadd34a7c9b2ffa18cef9d27b-9c4ff927dd184fdaa5c5ceef5c5df1a1">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0094/">Kimsuky</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0c13e54aadd34a7c9b2ffa18cef9d27b-a1f57fe926154327aa12329bb3a2ed0a">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0032/">Lazarus Group</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0c13e54aadd34a7c9b2ffa18cef9d27b-fa42c7819dc2462c8d35232ffc8bf729">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0077/">Leafminer</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0c13e54aadd34a7c9b2ffa18cef9d27b-89e759ff96974bc594e34c1fe4f27156">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0065/">Leviathan</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="0c13e54aadd34a7c9b2ffa18cef9d27b-c59818c999f94a52b120a1664a111877">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0030/">Lotus Blossom</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="1d866f4e63714ffdb3c2f9db0e76f52d">
+                <span>M-N</span>
+            <div class="expand-button collapsed" id="1d866f4e63714ffdb3c2f9db0e76f52d-header" data-toggle="collapse" data-target="#1d866f4e63714ffdb3c2f9db0e76f52d-body" aria-expanded="false" aria-controls="#1d866f4e63714ffdb3c2f9db0e76f52d-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="1d866f4e63714ffdb3c2f9db0e76f52d-body" aria-labelledby="1d866f4e63714ffdb3c2f9db0e76f52d-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="1d866f4e63714ffdb3c2f9db0e76f52d-93a8b3882045406480a6a1382a26f111">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0095/">Machete</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="1d866f4e63714ffdb3c2f9db0e76f52d-37a35f0d5f58406790f5cafaeba338cd">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0059/">Magic Hound</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="1d866f4e63714ffdb3c2f9db0e76f52d-30b2563a22ba478c938d5f316351edae">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0045/">menuPass</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="1d866f4e63714ffdb3c2f9db0e76f52d-32a27c2a86f447afb4eb6138c0ae1368">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0002/">Moafee</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="1d866f4e63714ffdb3c2f9db0e76f52d-58e5ff689f8a41f68f9d06b463b53a9b">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0021/">Molerats</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="1d866f4e63714ffdb3c2f9db0e76f52d-e96d6d538ac943b0981aec5edf08a9a8">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0069/">MuddyWater</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="1d866f4e63714ffdb3c2f9db0e76f52d-92fcf84cbaa249ab9b5344e1046884e3">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0019/">Naikon</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="1d866f4e63714ffdb3c2f9db0e76f52d-617807c043074f71a41478544bdbb48b">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0055/">NEODYMIUM</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="1d866f4e63714ffdb3c2f9db0e76f52d-00cdac259a1a4828b5f7fe644544fa1f">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0014/">Night Dragon</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="602e7feeca7e4111b5e8e4efb7287c4e">
+                <span>O-P</span>
+            <div class="expand-button collapsed" id="602e7feeca7e4111b5e8e4efb7287c4e-header" data-toggle="collapse" data-target="#602e7feeca7e4111b5e8e4efb7287c4e-body" aria-expanded="false" aria-controls="#602e7feeca7e4111b5e8e4efb7287c4e-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="602e7feeca7e4111b5e8e4efb7287c4e-body" aria-labelledby="602e7feeca7e4111b5e8e4efb7287c4e-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="602e7feeca7e4111b5e8e4efb7287c4e-3d303f18d8af4d9892851aeac0ef0a2a">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0049/">OilRig</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="602e7feeca7e4111b5e8e4efb7287c4e-9b07c6a295c849408df500f439037cd8">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0071/">Orangeworm</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="602e7feeca7e4111b5e8e4efb7287c4e-7f03bf957db74298b175b3827090ab06">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0040/">Patchwork</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="602e7feeca7e4111b5e8e4efb7287c4e-af378fd0d23743af90efa6e8bef99b08">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0011/">PittyTiger</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="602e7feeca7e4111b5e8e4efb7287c4e-3188c8b63cac425fb555ce7b68493f98">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0068/">PLATINUM</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="602e7feeca7e4111b5e8e4efb7287c4e-af43acfea2a3459ba0f75630d0408cc0">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0033/">Poseidon Group</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="602e7feeca7e4111b5e8e4efb7287c4e-7d7e8ebef0e54c87bb1f6f3a4e4d28d9">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0056/">PROMETHIUM</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="602e7feeca7e4111b5e8e4efb7287c4e-6b5ba015cfb34e2bbfdc397a2ae014d2">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0024/">Putter Panda</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="16967657d9bb4f84843041fccb203455">
+                <span>Q-R</span>
+            <div class="expand-button collapsed" id="16967657d9bb4f84843041fccb203455-header" data-toggle="collapse" data-target="#16967657d9bb4f84843041fccb203455-body" aria-expanded="false" aria-controls="#16967657d9bb4f84843041fccb203455-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="16967657d9bb4f84843041fccb203455-body" aria-labelledby="16967657d9bb4f84843041fccb203455-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="16967657d9bb4f84843041fccb203455-680d8586d0874686b074a96b9f200f41">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0075/">Rancor</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="16967657d9bb4f84843041fccb203455-017441b230f743c8b990f268eeb348ef">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0048/">RTM</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="04a6712d2fb14452889d5f964fde26f0">
+                <span>S-T</span>
+            <div class="expand-button collapsed" id="04a6712d2fb14452889d5f964fde26f0-header" data-toggle="collapse" data-target="#04a6712d2fb14452889d5f964fde26f0-body" aria-expanded="false" aria-controls="#04a6712d2fb14452889d5f964fde26f0-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="04a6712d2fb14452889d5f964fde26f0-body" aria-labelledby="04a6712d2fb14452889d5f964fde26f0-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="04a6712d2fb14452889d5f964fde26f0-fac0707c26cb49e693656911c0c34676">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0034/">Sandworm Team</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="04a6712d2fb14452889d5f964fde26f0-3f309ef7ea8d4aa2b1aab8f6145705b2">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0029/">Scarlet Mimic</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="04a6712d2fb14452889d5f964fde26f0-9c804d90cbbc40e49dad047f2836b2d5">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0091/">Silence</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="04a6712d2fb14452889d5f964fde26f0-ec1c1eac218a49bc85a0ef33967fa437">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0083/">SilverTerrier</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="04a6712d2fb14452889d5f964fde26f0-d5a8ad5d64a04b76910eac09c55fe304">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0093/">Soft Cell</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="04a6712d2fb14452889d5f964fde26f0-eecb257b08cd4838bb4a8e53997a578e">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0054/">Sowbug</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="04a6712d2fb14452889d5f964fde26f0-e5674bc322814adeb5381430f7b085d2">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0038/">Stealth Falcon</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="04a6712d2fb14452889d5f964fde26f0-70a3689e525840d3ba5a0c0d657ea88c">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0086/">Stolen Pencil</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head active" id="04a6712d2fb14452889d5f964fde26f0-0d6bc1e00a74456a80fa0c491a9d30a9">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0041/">Strider</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="04a6712d2fb14452889d5f964fde26f0-233a145488914998a5cf8ddbe2ce1994">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0039/">Suckfly</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="04a6712d2fb14452889d5f964fde26f0-104699b66c79445385ebc036311972f6">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0062/">TA459</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="04a6712d2fb14452889d5f964fde26f0-fddb343dfc544bdb91812ab364ca4801">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0092/">TA505</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="04a6712d2fb14452889d5f964fde26f0-b413bb7b8ebb40e794f5a36a003c0565">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0015/">Taidoor</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="04a6712d2fb14452889d5f964fde26f0-af63e3cf032b4cb0924adfefd3b0a804">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0088/">TEMP.Veles</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="04a6712d2fb14452889d5f964fde26f0-0165d8a0aefd4a9fa3a0570cce85732a">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0089/">The White Company</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="04a6712d2fb14452889d5f964fde26f0-a26e8d31b5df48f496e9ade9f21906d1">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0028/">Threat Group-1314</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="04a6712d2fb14452889d5f964fde26f0-dc0bde1902a1499dba465f20887adebe">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0027/">Threat Group-3390</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="04a6712d2fb14452889d5f964fde26f0-669f489b59704d1ab6b805048b46ffb1">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0076/">Thrip</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="04a6712d2fb14452889d5f964fde26f0-1f32e3f9304647bd83fc595da62f4ffb">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0081/">Tropic Trooper</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="04a6712d2fb14452889d5f964fde26f0-2036a6f6aded4dc8aae21a00a39299dd">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0010/">Turla</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="f34f887354ea468fa3f23249531c263e">
+                <span>U-V</span>
+            <div class="expand-button collapsed" id="f34f887354ea468fa3f23249531c263e-header" data-toggle="collapse" data-target="#f34f887354ea468fa3f23249531c263e-body" aria-expanded="false" aria-controls="#f34f887354ea468fa3f23249531c263e-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="f34f887354ea468fa3f23249531c263e-body" aria-labelledby="f34f887354ea468fa3f23249531c263e-header">
+                    
+<div class="sidenav">
+            <span>No groups</span>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="24ba07dc68f1439089b53e88af5627e3">
+                <span>W-X</span>
+            <div class="expand-button collapsed" id="24ba07dc68f1439089b53e88af5627e3-header" data-toggle="collapse" data-target="#24ba07dc68f1439089b53e88af5627e3-body" aria-expanded="false" aria-controls="#24ba07dc68f1439089b53e88af5627e3-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="24ba07dc68f1439089b53e88af5627e3-body" aria-labelledby="24ba07dc68f1439089b53e88af5627e3-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="24ba07dc68f1439089b53e88af5627e3-d9d9c01f55e44808bdd89ce22dff80d0">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0044/">Winnti Group</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="24ba07dc68f1439089b53e88af5627e3-138a5c7bc95f43f48f0f222440e0e0b9">
+                <a href="https://apowers313.github.io/generic-attack/groups/G0090/">WIRTE</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="b3c9a37b477f4711830cf68cfc934d23">
+                <span>Y-Z</span>
+            <div class="expand-button collapsed" id="b3c9a37b477f4711830cf68cfc934d23-header" data-toggle="collapse" data-target="#b3c9a37b477f4711830cf68cfc934d23-body" aria-expanded="false" aria-controls="#b3c9a37b477f4711830cf68cfc934d23-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="b3c9a37b477f4711830cf68cfc934d23-body" aria-labelledby="b3c9a37b477f4711830cf68cfc934d23-header">
+                    
+<div class="sidenav">
+            <span>No groups</span>
+</div>
+
+        </div>
+</div>
+
+ 
+    </div>
+<!--startindex-->
+            </div>
+             
+            <div class="tab-content col-xl-10 col-lg-9 col-md-9 pt-4" id="v-tabContent">
+                <div class="tab-pane fade show active" id="v-attckmatrix" role="tabpanel" aria-labelledby="v-attckmatrix-tab">
+
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/">Home</a></li>
+        <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/groups/">Groups</a></li>
+        <li class="breadcrumb-item">Strider</li>
+    </ol>
+    <div class="tab-pane fade show active" id="v-" role="tabpanel" aria-labelledby="v--tab"></div>
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container-fluid">
+                    <h1>
+                        Strider
+                    </h1>
+                    <div class="row">
+                        <div class="col-md-8 description-body">
+                        <p><a href="/groups/G0041">Strider</a> is a threat group that has been active since at least 2011 and has targeted victims in Russia, China, Sweden, Belgium, Iran, and Rwanda. <span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Symantec Strider Blog"><sup><a href="http://www.symantec.com/connect/blogs/strider-cyberespionage-group-turns-eye-sauron-targets" target="_blank" data-hasqtip="0" aria-describedby="qtip-0">[1]</a></sup></span> <span onclick=scrollToRef('scite-2') id="scite-ref-2-a" class="scite-citeref-number" data-reference="Kaspersky ProjectSauron Blog"><sup><a href="https://securelist.com/faq-the-projectsauron-apt/75533/" target="_blank" data-hasqtip="1" aria-describedby="qtip-1">[2]</a></sup></span></p>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                    <div class="card-data"><span class="h5 card-title">ID</span>: G0041</div>
+                                    <div class="card-data"><span class="h5 card-title">Associated Groups</span>: ProjectSauron</div>
+                                
+                                    <div class="card-data"><span class="h5 card-title">Version</span>: 1.0</div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                        <h2 class="pt-3" id ="aliasDescription">Associated Group Descriptions</h2>
+                        <table class="table table-bordered table-alternate mt-2">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody> 
+                                <tr>
+                                    <td>
+                                        ProjectSauron
+                                    </td>
+                                    <td>
+                                        ProjectSauron is used to refer both to the threat group also known as G0041 as well as the malware platform also known as S0125. <span onclick=scrollToRef('scite-2') id="scite-ref-2-a" class="scite-citeref-number" data-reference="Kaspersky ProjectSauron Blog"><sup><a href="https://securelist.com/faq-the-projectsauron-apt/75533/" target="_blank" data-hasqtip="1" aria-describedby="qtip-1">[2]</a></sup></span> <span onclick=scrollToRef('scite-3') id="scite-ref-3-a" class="scite-citeref-number" data-reference="Kaspersky ProjectSauron Full Report"><sup><a href="https://securelist.com/files/2016/07/The-ProjectSauron-APT_research_KL.pdf" target="_blank" data-hasqtip="2" aria-describedby="qtip-2">[3]</a></sup></span>
+                                    </td>
+                                </tr>
+ 
+                            </tbody>
+                        </table>
+                    
+                                <div class="dropdown h3 mt-3 float-right">
+            <button class="btn btn-navy dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <b>ATT&amp;CK™ Navigator Layers</b>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <h6 class="dropdown-header">Enterprise Layer</h6>
+                    <a class="dropdown-item" href="/groups/G0041/G0041-enterprise-layer.json" download target="_blank">download</a>
+                    <a class="dropdown-item" href="#" id="view-layer-on-navigator-enterprise" target="_blank">view <img width="10" src="/theme/images/external-site-dark.jpeg"></a>
+                    <script>
+                        if (window.location.protocol == "https:") { //view on navigator only works when this site is hosted on HTTPS
+                            layerURL = window.location.protocol + "//" + window.location.host + "/groups/G0041/G0041-enterprise-layer.json";
+                            document.getElementById("view-layer-on-navigator-enterprise").href = "https://mitre-attack.github.io/attack-navigator/enterprise/#layerURL=" + encodeURIComponent(layerURL);
+                        } else { //hide button
+                            document.getElementById("view-layer-on-navigator-enterprise").classList.add("d-none");
+                        }
+                    </script>
+            </div>
+        </div>
+
+                        <h2 class="pt-3" id="techniques">Techniques Used</h2>
+                        <table class="table table-bordered table-alternate mt-2">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Domain</th>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Use</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <td>
+                                                Enterprise
+ 
+                                        </td>
+                                        <td>
+                                            <a href="https://apowers313.github.io/generic-attack/techniques/T1090">T1090</a>
+                                        </td>
+                                        <td>
+                                            <a href="https://apowers313.github.io/generic-attack/techniques/T1090">Connection Proxy</a>
+                                        </td>
+                                        <td>
+                                            <p><a href="/groups/G0041">Strider</a> has used local servers with both local network and Internet access to act as internal proxy nodes to exfiltrate data from other parts of the network without direct Internet access.<span onclick=scrollToRef('scite-2') id="scite-ref-2-a" class="scite-citeref-number" data-reference="Kaspersky ProjectSauron Blog"><sup><a href="https://securelist.com/faq-the-projectsauron-apt/75533/" target="_blank" data-hasqtip="1" aria-describedby="qtip-1">[2]</a></sup></span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                                Enterprise
+ 
+                                        </td>
+                                        <td>
+                                            <a href="https://apowers313.github.io/generic-attack/techniques/T1003">T1003</a>
+                                        </td>
+                                        <td>
+                                            <a href="https://apowers313.github.io/generic-attack/techniques/T1003">Credential Dumping</a>
+                                        </td>
+                                        <td>
+                                            <p><a href="/groups/G0041">Strider</a> has registered its persistence module on domain controllers as a Windows LSA (Local System Authority) password filter to dump credentials any time a domain, local user, or administrator logs in or changes a password.<span onclick=scrollToRef('scite-3') id="scite-ref-3-a" class="scite-citeref-number" data-reference="Kaspersky ProjectSauron Full Report"><sup><a href="https://securelist.com/files/2016/07/The-ProjectSauron-APT_research_KL.pdf" target="_blank" data-hasqtip="2" aria-describedby="qtip-2">[3]</a></sup></span></p>
+                                        </td>
+                                    </tr>
+                            </tbody>
+                        </table>
+            
+                        <h2 class="pt-3" id="software">Software</h2>
+                        <table class="table table-bordered table-alternate mt-2">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Name</th>
+                                        <th scope="col">References</th>
+                                    <th scope="col">Techniques</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="https://apowers313.github.io/generic-attack/software/S0125">S0125</a>
+                                        </td>
+                                        <td>
+                                            <a href="https://apowers313.github.io/generic-attack/software/S0125">Remsec</a>
+                                        </td>
+                                            <td>
+                                                
+                                                        <sup>
+            <a aria-describedby="qtip-1" href="http://www.symantec.com/connect/blogs/strider-cyberespionage-group-turns-eye-sauron-targets" target="_blank" data-hasqtip="1">[1]</a>
+        </sup>
+        <sup>
+            <a aria-describedby="qtip-2" href="https://securelist.com/faq-the-projectsauron-apt/75533/" target="_blank" data-hasqtip="2">[2]</a>
+        </sup>
+
+                                            </td>
+                                        <td>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1087">Account Discovery, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1003">Credential Dumping, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1094">Custom Command and Control Protocol, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1025">Data from Removable Media, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1089">Disabling Security Tools, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1048">Exfiltration Over Alternative Protocol, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1052">Exfiltration Over Physical Medium, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1068">Exploitation for Privilege Escalation, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1083">File and Directory Discovery, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1107">File Deletion, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1056">Input Capture, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1036">Masquerading, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1046">Network Service Scanning, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1027">Obfuscated Files or Information, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1174">Password Filter DLL, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1057">Process Discovery, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1055">Process Injection, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1105">Remote File Copy, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1018">Remote System Discovery, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1053">Scheduled Task, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1063">Security Software Discovery, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1071">Standard Application Layer Protocol, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1032">Standard Cryptographic Protocol, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1095">Standard Non-Application Layer Protocol, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1082">System Information Discovery, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1016">System Network Configuration Discovery, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1049">System Network Connections Discovery, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1033">System Owner/User Discovery, </a>
+                                                <a href="https://apowers313.github.io/generic-attack/techniques/T1065">Uncommonly Used Port</a>
+                                        </td>
+                                    </tr>
+                            </tbody>
+                        </table>
+
+                        <h2 class="pt-3" id="references">References</h2>
+
+                        <div class="row">
+                            <div class="col">
+                                <ol>
+                                            <li>
+                                                <span  id="scite-1" class="scite-citation">
+                                                    <span class="scite-citation-text">
+                                                        <a rel="nofollow" class="external text" name="scite-1" href="https://apowers313.github.io/generic-attackhttp://www.symantec.com/connect/blogs/strider-cyberespionage-group-turns-eye-sauron-targets" target="_blank">
+                                                            Symantec Security Response. (2016, August 7). Strider: Cyberespionage group turns eye of Sauron on targets. Retrieved August 17, 2016.
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span  id="scite-2" class="scite-citation">
+                                                    <span class="scite-citation-text">
+                                                        <a rel="nofollow" class="external text" name="scite-2" href="https://apowers313.github.io/generic-attackhttps://securelist.com/faq-the-projectsauron-apt/75533/" target="_blank">
+                                                            Kaspersky Lab's Global Research & Analysis Team. (2016, August 8). ProjectSauron: top level cyber-espionage platform covertly extracts encrypted government comms. Retrieved August 17, 2016.
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </li>
+                                </ol>
+                            </div>
+                            <div class="col">
+                                    <ol start="3.0">
+                                                <li>
+                                                    <span  id="scite-3" class="scite-citation">
+                                                        <span class="scite-citation-text">
+                                                            <a rel="nofollow" class="external text" name="scite-3" href="https://apowers313.github.io/generic-attackhttps://securelist.com/files/2016/07/The-ProjectSauron-APT_research_KL.pdf" target="_blank">
+                                                                Kaspersky Lab's Global Research & Analysis Team. (2016, August 9). The ProjectSauron APT. Retrieved August 17, 2016.
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </li>
+                                    </ol>  
+                            </div>             
+                        </div>
+  
+                </div>
+            </div>
+        </div>
+    </div>
+
+                </div>
+            </div>
+        </div>  
+    </div>
+</div>
+<!--stopindex-->
+<footer class="footer p-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 col-sm-4 col-md-3">  
+                <div class="footer-center-responsive my-auto">
+                    <a href="https://www.mitre.org" target="_blank" rel="noopener" aria-label="MITRE">
+                        <img src="https://apowers313.github.io/generic-attack/theme/images/attackwhiteontrans.gif" class="mitre-logo-wtrans">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2 col-sm-2 footer-responsive-break"></div>
+            <div class="col-6 col-sm-6 text-center">  
+                <p>
+                    blah blah copyright blah.
+                </p>
+                <div class="row">
+                    <div class="col text-right">
+                        <small>
+                            <a href="https://apowers313.github.io/generic-attack/resources/privacy" class="footer-link">Privacy Policy</a>
+                        </small>
+                    </div>
+                    <div class="col text-left">
+                        <small>
+                            <a href="https://apowers313.github.io/generic-attack/resources/terms-of-use" class="footer-link">Terms of Use</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 p-2 footer-responsive-break"></div>
+            <div class="col">
+                <div class="footer-float-right-responsive">
+                    <div class="mb-1">
+                        <a href="https://twitter.com/MITREattack" class="btn btn-primary w-100">
+                            <!-- <i class="fa fa-twitter"></i> -->
+                            <b>BUTTON!</b>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="https://apowers313.github.io/generic-attack/contact" class="btn btn-primary w-100">
+                            <b>BUTTON 2!</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+        <!--SCRIPTS-->
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/jquery-3.2.1.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/popper.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/bootstrap.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/site.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/lunr-2.3.3.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/search.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/index.js"></script>
+
+    <!--SCRIPTS-->
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/navigation.js"></script>
+</body>
+
+</html>
+<!--startindex-->

@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+        <!-- insert analytics here-->
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel='shortcut icon' href='https://apowers313.github.io/generic-attack/theme/favicon.ico' type='image/x-icon'>
+        <title>Application Vetting - Mobile | MITRE ATT&CK&trade;</title>
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='https://apowers313.github.io/generic-attack/theme/style/bootstrap.min.css' />
+        <link rel='stylesheet' href='https://apowers313.github.io/generic-attack/theme/style/bootstrap-glyphicon.min.css' />
+        <link rel="stylesheet" type="text/css" href="https://apowers313.github.io/generic-attack/theme/style.min.css?8cde5623">
+</head>
+
+<body>
+<!--stopindex-->
+<header>
+    
+        <nav class='navbar navbar-expand-lg navbar-dark fixed-top'>
+            <a class='navbar-brand' href='https://apowers313.github.io/generic-attack/'><img src="https://apowers313.github.io/generic-attack/theme/images/attack.png" height="50px"/></a>
+            <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse'
+                    aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+                <span class='navbar-toggler-icon' onclick="search('')"></span>
+            </button>
+            <div class='collapse navbar-collapse' id='navbarCollapse'>
+                <ul class='nav nav-tabs ml-auto'>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/matrices/"  class="nav-link" ><b>Matrices</b></a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/tactics/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Tactics</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/pre">PRE-ATT&CK</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/tactics/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/techniques/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Techniques</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/pre">PRE-ATT&CK</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/techniques/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://apowers313.github.io/generic-attack/mitigations/" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Mitigations</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/enterprise">Enterprise</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/mobile">Mobile</a>
+                                            <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/example">Example</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/groups/"  class="nav-link" ><b>Groups</b></a></li>
+                            <li class="nav-item"><a href="https://apowers313.github.io/generic-attack/software/"  class="nav-link" ><b>Software</b></a></li>
+                </ul>
+                <ul class='navbar-nav flex-row d-md-flex float-right'>
+                    <li>
+                        <form class='form-inline pl-2'>
+                            <input class='form-control' type='text' placeholder='Search site' aria-label='Search' id="search"
+                                   autocomplete="off">
+                        </form>
+                        <div class="search-results"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+        <!-- don't edit or remove the line below even though it's commented out, it gets parsed and replaced by the previous-versions feature -->
+        <!-- !previous versions banner! -->
+        <!--startindex-->
+<div id='content'>    <div class='container-fluid'>
+        <div class='row'>
+ 
+             
+            <div class="nav flex-column col-xl-2 col-lg-3 col-md-3  sidebar nav pt-5 pb-3 pl-3 border-right" id="v-tab" role="tablist" aria-orientation="vertical">
+<!--stopindex-->
+        <button class="btn btn-default dropdown-toggle heading-dropdown mb-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MOBILE</button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/enterprise">ENTERPRISE</a>
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/mobile">MOBILE</a>
+        <a class="dropdown-item" href="https://apowers313.github.io/generic-attack/mitigations/example">EXAMPLE</a>
+    </div>
+    <div class="group-nav-desktop-view">
+        <span class="heading" id="v-home-tab" aria-selected="false">MITIGATIONS</span>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="0-0">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/mobile/">Overview</a>
+            </div>
+</div>
+
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Application Developer Guidance-Application Developer Guidance">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1013/">Application Developer Guidance</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head active" id="Application Vetting-Application Vetting">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1005/">Application Vetting</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Attestation-Attestation">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1002/">Attestation</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Caution with Device Administrator Access-Caution with Device Administrator Access">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1007/">Caution with Device Administrator Access</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Deploy Compromised Device Detection Method-Deploy Compromised Device Detection Method">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1010/">Deploy Compromised Device Detection Method</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Encrypt Network Traffic-Encrypt Network Traffic">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1009/">Encrypt Network Traffic</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Enterprise Policy-Enterprise Policy">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1012/">Enterprise Policy</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Interconnection Filtering-Interconnection Filtering">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1014/">Interconnection Filtering</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Lock Bootloader-Lock Bootloader">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1003/">Lock Bootloader</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Security Updates-Security Updates">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1001/">Security Updates</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="System Partition Integrity-System Partition Integrity">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1004/">System Partition Integrity</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="Use Recent OS Version-Use Recent OS Version">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1006/">Use Recent OS Version</a>
+            </div>
+</div>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="User Guidance-User Guidance">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1011/">User Guidance</a>
+            </div>
+</div>
+
+
+    </div>
+    <div class="group-nav-mobile-view">
+        <span class="heading" id="v-home-tab" aria-selected="false">MITIGATIONS</span>
+
+    
+<div class="sidenav">
+            <div class="sidenav-head" id="0-0">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/mobile/">Overview</a>
+            </div>
+</div>
+
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="fc849431bcae492fbf21b22228415aa0">
+                <span>A-C</span>
+            <div class="expand-button collapsed" id="fc849431bcae492fbf21b22228415aa0-header" data-toggle="collapse" data-target="#fc849431bcae492fbf21b22228415aa0-body" aria-expanded="false" aria-controls="#fc849431bcae492fbf21b22228415aa0-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="fc849431bcae492fbf21b22228415aa0-body" aria-labelledby="fc849431bcae492fbf21b22228415aa0-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="fc849431bcae492fbf21b22228415aa0-7ec728e5079d4618bf0c34dc4afbf92e">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1013/">Application Developer Guidance</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head active" id="fc849431bcae492fbf21b22228415aa0-5ef0557ae608465b9772357f7b11e81b">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1005/">Application Vetting</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="fc849431bcae492fbf21b22228415aa0-bd1cab43a72245cd994d3644c22a183d">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1002/">Attestation</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="fc849431bcae492fbf21b22228415aa0-8765cfaf71b2452aada2768ae0182753">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1007/">Caution with Device Administrator Access</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="c4e8c801bebd44b5b715abb0e973fb27">
+                <span>D-F</span>
+            <div class="expand-button collapsed" id="c4e8c801bebd44b5b715abb0e973fb27-header" data-toggle="collapse" data-target="#c4e8c801bebd44b5b715abb0e973fb27-body" aria-expanded="false" aria-controls="#c4e8c801bebd44b5b715abb0e973fb27-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="c4e8c801bebd44b5b715abb0e973fb27-body" aria-labelledby="c4e8c801bebd44b5b715abb0e973fb27-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="c4e8c801bebd44b5b715abb0e973fb27-ba858defd0c14c03bcc30579a96e2297">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1010/">Deploy Compromised Device Detection Method</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="c4e8c801bebd44b5b715abb0e973fb27-ada129e4f93c49cc87cb4ef6db7a9278">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1009/">Encrypt Network Traffic</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="c4e8c801bebd44b5b715abb0e973fb27-935db85c24f949ec8de4c9ef6994465e">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1012/">Enterprise Policy</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="9cf27ab26f014b829b43e1ed0e5538d3">
+                <span>G-I</span>
+            <div class="expand-button collapsed" id="9cf27ab26f014b829b43e1ed0e5538d3-header" data-toggle="collapse" data-target="#9cf27ab26f014b829b43e1ed0e5538d3-body" aria-expanded="false" aria-controls="#9cf27ab26f014b829b43e1ed0e5538d3-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="9cf27ab26f014b829b43e1ed0e5538d3-body" aria-labelledby="9cf27ab26f014b829b43e1ed0e5538d3-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="9cf27ab26f014b829b43e1ed0e5538d3-73f38371aaad40b1a61350e0d03388bf">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1014/">Interconnection Filtering</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="b76919fc9c1b4113a46c52dc4fccdd9e">
+                <span>J-L</span>
+            <div class="expand-button collapsed" id="b76919fc9c1b4113a46c52dc4fccdd9e-header" data-toggle="collapse" data-target="#b76919fc9c1b4113a46c52dc4fccdd9e-body" aria-expanded="false" aria-controls="#b76919fc9c1b4113a46c52dc4fccdd9e-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="b76919fc9c1b4113a46c52dc4fccdd9e-body" aria-labelledby="b76919fc9c1b4113a46c52dc4fccdd9e-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="b76919fc9c1b4113a46c52dc4fccdd9e-71e57843a6da40d08c5489c4ea366193">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1003/">Lock Bootloader</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="2dd03245101e4e0bbb4c87f3b1542f96">
+                <span>M-O</span>
+            <div class="expand-button collapsed" id="2dd03245101e4e0bbb4c87f3b1542f96-header" data-toggle="collapse" data-target="#2dd03245101e4e0bbb4c87f3b1542f96-body" aria-expanded="false" aria-controls="#2dd03245101e4e0bbb4c87f3b1542f96-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="2dd03245101e4e0bbb4c87f3b1542f96-body" aria-labelledby="2dd03245101e4e0bbb4c87f3b1542f96-header">
+                    
+<div class="sidenav">
+            <span>No mitigations</span>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="756f5a9c1cad4d7c8cfc160f000f031f">
+                <span>P-R</span>
+            <div class="expand-button collapsed" id="756f5a9c1cad4d7c8cfc160f000f031f-header" data-toggle="collapse" data-target="#756f5a9c1cad4d7c8cfc160f000f031f-body" aria-expanded="false" aria-controls="#756f5a9c1cad4d7c8cfc160f000f031f-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="756f5a9c1cad4d7c8cfc160f000f031f-body" aria-labelledby="756f5a9c1cad4d7c8cfc160f000f031f-header">
+                    
+<div class="sidenav">
+            <span>No mitigations</span>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="e1438608e0df4f539e4248d65974e9ea">
+                <span>S-U</span>
+            <div class="expand-button collapsed" id="e1438608e0df4f539e4248d65974e9ea-header" data-toggle="collapse" data-target="#e1438608e0df4f539e4248d65974e9ea-body" aria-expanded="false" aria-controls="#e1438608e0df4f539e4248d65974e9ea-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="e1438608e0df4f539e4248d65974e9ea-body" aria-labelledby="e1438608e0df4f539e4248d65974e9ea-header">
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="e1438608e0df4f539e4248d65974e9ea-327e359b9515446e9b80dd2dd7acc89e">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1001/">Security Updates</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="e1438608e0df4f539e4248d65974e9ea-1a0c53d0b3a64b3bbd653e5e8fa6123a">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1004/">System Partition Integrity</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="e1438608e0df4f539e4248d65974e9ea-3120a223707e4de1b1d3a4eff3a1cfb0">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1006/">Use Recent OS Version</a>
+            </div>
+</div>
+
+                    
+<div class="sidenav">
+            <div class="sidenav-head" id="e1438608e0df4f539e4248d65974e9ea-18d750d044e94e3988e91808e2bf0a8a">
+                <a href="https://apowers313.github.io/generic-attack/mitigations/M1011/">User Guidance</a>
+            </div>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="d9348729bb5d4cca8e62208d169e5c2c">
+                <span>V-X</span>
+            <div class="expand-button collapsed" id="d9348729bb5d4cca8e62208d169e5c2c-header" data-toggle="collapse" data-target="#d9348729bb5d4cca8e62208d169e5c2c-body" aria-expanded="false" aria-controls="#d9348729bb5d4cca8e62208d169e5c2c-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="d9348729bb5d4cca8e62208d169e5c2c-body" aria-labelledby="d9348729bb5d4cca8e62208d169e5c2c-header">
+                    
+<div class="sidenav">
+            <span>No mitigations</span>
+</div>
+
+        </div>
+</div>
+
+    
+<div class="sidenav">
+        <div class="sidenav-head " id="55cf9629b55d44fbb05d4a91d7af2493">
+                <span>Y-Z</span>
+            <div class="expand-button collapsed" id="55cf9629b55d44fbb05d4a91d7af2493-header" data-toggle="collapse" data-target="#55cf9629b55d44fbb05d4a91d7af2493-body" aria-expanded="false" aria-controls="#55cf9629b55d44fbb05d4a91d7af2493-body"></div>
+
+        </div>
+        <div class="sidenav-body collapse" id="55cf9629b55d44fbb05d4a91d7af2493-body" aria-labelledby="55cf9629b55d44fbb05d4a91d7af2493-header">
+                    
+<div class="sidenav">
+            <span>No mitigations</span>
+</div>
+
+        </div>
+</div>
+
+ 
+    </div>
+<!--startindex-->
+            </div>
+             
+            <div class="tab-content col-xl-10 col-lg-9 col-md-9 pt-4" id="v-tabContent">
+                <div class="tab-pane fade show active" id="v-attckmatrix" role="tabpanel" aria-labelledby="v-attckmatrix-tab">
+    
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/">Home</a></li>
+        <li class="breadcrumb-item"><a href="https://apowers313.github.io/generic-attack/mitigations">Mitigations</a></li>
+        <li class="breadcrumb-item">Application Vetting</li>
+    </ol>
+    <div class="tab-pane fade show active" id="v-" role="tabpanel" aria-labelledby="v--tab"></div>
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container-fluid">
+                    <h1>
+                        Application Vetting
+                    </h1>
+                    <div class="row">
+                        <div class="col-md-8 description-body">
+                            <p>Enterprises can vet applications for exploitable vulnerabilities or unwanted (privacy-invasive or malicious) behaviors. Enterprises can inspect applications themselves or use a third-party service.</p><br><p>Enterprises may impose policies to only allow pre-approved applications to be installed on their devices or may impose policies to block use of specific applications known to have issues. In Bring Your Own Device (BYOD) environments, enterprises may only be able to impose these policies over an enterprise-managed portion of the device.</p><br><p>Application Vetting is not a complete mitigation. Techniques such as <a href="/techniques/T1440">Detect App Analysis Environment</a> exist that can enable adversaries to bypass vetting.</p>
+                        </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                    <div class="card-data"><span class="h5 card-title">ID:</span> M1005</div>
+                                    <div class="card-data"><span class="h5 card-title">Version:</span> 1.0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <h2 class="pt-3" id ="techniquestable">Techniques Addressed by Mitigation</h2>
+                    <table class="table table-bordered table-alternate">
+                        <thead>
+                            <tr>
+                                <th scope="col">Domain</th>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1453">T1453</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1453">Abuse Accessibility Features</a>   
+                                    </td>
+                                    <td>
+                                        <p>Enterprises could perform app vetting before allowing apps to be installed on devices and search for abuse of accessibility features as part of the analysis, or otherwise use mobile app reputation services to search for known malicious apps.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1401">T1401</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1401">Abuse Device Administrator Access to Prevent Removal</a>   
+                                    </td>
+                                    <td>
+                                        <p>It is rare for applications to utilize Device Administrator access. App vetting can detect apps that do so, and those apps should be closely scrutinized. A static analysis approach can be used to identify ransomware apps including apps that abuse Device Administrator access.<span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Maggi-Ransomware"><sup><a href="https://www.blackhat.com/docs/eu-16/materials/eu-16-Maggi-Pocket-Sized-Badness-Why-Ransomware-Comes-As-A-Plot-Twist-In-The-Cat-Mouse-Game.pdf" target="_blank" data-hasqtip="0" aria-describedby="qtip-0">[1]</a></sup></span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1435">T1435</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1435">Access Calendar Entries</a>   
+                                    </td>
+                                    <td>
+                                        <p>On Android, accessing device calendar data requires that the app hold the READ_CALENDAR permission. Apps that request this permission could be closely scrutinized to ensure that the request is appropriate. On iOS, the app vetting process can determine whether apps access device calendar data, with extra scrutiny applied to any that do so.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1433">T1433</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1433">Access Call Log</a>   
+                                    </td>
+                                    <td>
+                                        <p>On Android, accessing the device call log requires that the app hold the READ_CALL_LOG permission. Apps that request this permission could be closely scrutinized to ensure that the request is appropriate.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1432">T1432</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1432">Access Contact List</a>   
+                                    </td>
+                                    <td>
+                                        <p>On Android, accessing the device contact list requires that the app hold the READ_CONTACTS permission. Apps that request this permission could be closely scrutinized to ensure that the request is appropriate. On iOS, the app vetting process can determine whether apps access the device contact list, with extra scrutiny applied to any that do so.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1413">T1413</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1413">Access Sensitive Data in Device Logs</a>   
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1409">T1409</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1409">Access Stored Application Data</a>   
+                                    </td>
+                                    <td>
+                                        <p>Ensure applications do not store data in an insecure fashion, such as in unprotected external storage, without acknowledging the risk that the data can potentially be accessed or modified by other applications.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1416">T1416</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1416">Android Intent Hijacking</a>   
+                                    </td>
+                                    <td>
+                                        <p>When vetting applications for potential security weaknesses, the vetting process could look for insecure use of intents. Developers should be encouraged to use techniques to ensure that the intent can only be sent to an appropriate destination (e.g., use explicit rather than implicit intents, permission checking, checking of the destination app's signing certificate, or the App Links feature added in Android 6.0). For mobile applications using OAuth, encourage use of best practice.<span onclick=scrollToRef('scite-3') id="scite-ref-3-a" class="scite-citeref-number" data-reference="IETF-OAuthNativeApps"><sup><a href="https://tools.ietf.org/html/rfc8252" target="_blank" data-hasqtip="2" aria-describedby="qtip-2">[3]</a></sup></span><span onclick=scrollToRef('scite-4') id="scite-ref-4-a" class="scite-citeref-number" data-reference="Android-AppLinks"><sup><a href="https://developer.android.com/training/app-links/index.html" target="_blank" data-hasqtip="3" aria-describedby="qtip-3">[4]</a></sup></span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1402">T1402</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1402">App Auto-Start at Device Boot</a>   
+                                    </td>
+                                    <td>
+                                        <p>Enterprises could potentially vet apps before allowing their use on devices, and carefully scrutinize apps that declare a BroadcastReceiver containing an intent-filter for BOOT_COMPLETED. Unfortunately this is likely not practical due to the vast number of apps with this behavior.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1418">T1418</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1418">Application Discovery</a>   
+                                    </td>
+                                    <td>
+                                        <p>Application vetting techniques could search for use of the Android PackageManager class to enumerate other apps, and such applications could have extra scrutiny applied to them. However, this technique may not be practical if many apps invoke these methods as part of their legitimate behavior. On iOS, application vetting techniques could similarly search for use of the private API call necessary to obtain a list of apps installed on the device. Additionally, on iOS, use of the private API call is likely to result in the app not being accepted into Apple's App Store.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1429">T1429</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1429">Capture Audio</a>   
+                                    </td>
+                                    <td>
+                                        <p>Applications using the android permission <code>android.permission.RECORD_AUDIO</code> or iOS applications using <code>RequestRecordPermission</code> could be more closely scrutinized and monitored. If <code>android.permission.CAPTURE_AUDIO_OUTPUT</code> is found in a third-party application, it should be heavily scrutinized.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1512">T1512</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1512">Capture Camera</a>   
+                                    </td>
+                                    <td>
+                                        <p>During the vetting process applications using the android permission <code>android.permission.CAMERA</code>, or the iOS <code>NSCameraUsageDescription</code> plist entry could be analyzed more closely.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1414">T1414</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1414">Capture Clipboard Data</a>   
+                                    </td>
+                                    <td>
+                                        <p>Applications could be vetted for their use of the clipboard manager APIs with extra scrutiny given to application that make use of them.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1412">T1412</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1412">Capture SMS Messages</a>   
+                                    </td>
+                                    <td>
+                                        <p>Enterprises performing application vetting could search for applications that declare the RECEIVE_SMS permission and scrutinize them closely.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1510">T1510</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1510">Clipboard Modification</a>   
+                                    </td>
+                                    <td>
+                                        <p>Applications could be vetted for their use of the clipboard manager APIs with extra scrutiny given to application that make use of them.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1471">T1471</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1471">Data Encrypted for Impact</a>   
+                                    </td>
+                                    <td>
+                                        <p>A static analysis approach may be able to identify ransomware apps that encrypt user files on the device.<span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Maggi-Ransomware"><sup><a href="https://www.blackhat.com/docs/eu-16/materials/eu-16-Maggi-Pocket-Sized-Badness-Why-Ransomware-Comes-As-A-Plot-Twist-In-The-Cat-Mouse-Game.pdf" target="_blank" data-hasqtip="0" aria-describedby="qtip-0">[1]</a></sup></span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1475">T1475</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1475">Deliver Malicious App via Authorized App Store</a>   
+                                    </td>
+                                    <td>
+                                        <p>App store operators and enterprises could assess reputational characteristics of the app, including the popularity of the app or other apps from the same developer and whether or not security issues have been found in other apps from the same developer.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1446">T1446</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1446">Device Lockout</a>   
+                                    </td>
+                                    <td>
+                                        <p>It is rare for applications to utilize Device Administrator access. App vetting can detect apps that do so, and those apps should be closely scrutinized. A static analysis approach can be used to identify ransomware apps including apps that abuse Device Administrator access.<span onclick=scrollToRef('scite-1') id="scite-ref-1-a" class="scite-citeref-number" data-reference="Maggi-Ransomware"><sup><a href="https://www.blackhat.com/docs/eu-16/materials/eu-16-Maggi-Pocket-Sized-Badness-Why-Ransomware-Comes-As-A-Plot-Twist-In-The-Cat-Mouse-Game.pdf" target="_blank" data-hasqtip="0" aria-describedby="qtip-0">[1]</a></sup></span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1407">T1407</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1407">Download New Code at Runtime</a>   
+                                    </td>
+                                    <td>
+                                        <p>Application vetting techniques could (either statically or dynamically) look for indications that the application downloads and executes new code at runtime (e.g., on Android use of DexClassLoader, System.load, or the WebView JavaScriptInterface capability, or on iOS use of JSPatch or similar capabilities). Unfortunately, this is only a partial mitigation, as additional scrutiny would still need to be applied to applications that use these techniques, as the techniques are often used without malicious intent, and because applications may employ other techniques such as to hide their use of these techniques.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1523">T1523</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1523">Evade Analysis Environment</a>   
+                                    </td>
+                                    <td>
+                                        <p>Applications attempting to get <code>android.os.SystemProperties</code> or <code>getprop</code> with the runtime <code>exec()</code> commands should be closely scrutinized. Google does not recommend the use of system properties within applications.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1404">T1404</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1404">Exploit OS Vulnerability</a>   
+                                    </td>
+                                    <td>
+                                        <p>Application vetting may be able to identify the presence of exploit code within applications.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1405">T1405</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1405">Exploit TEE Vulnerability</a>   
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1472">T1472</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1472">Generate Fraudulent Advertising Revenue</a>   
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1417">T1417</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1417">Input Capture</a>   
+                                    </td>
+                                    <td>
+                                        <p>Applications that attempt to register themselves as a device keyboard or request the <code>android.permission.BIND_ACCESSIBILITY_SERVICE</code> permission in a service declaration should be closely scrutinized during the vetting process.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1516">T1516</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1516">Input Injection</a>   
+                                    </td>
+                                    <td>
+                                        <p>Applications that register an accessibility service should be scrutinized further for malicious behavior.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1411">T1411</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1411">Input Prompt</a>   
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1430">T1430</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1430">Location Tracking</a>   
+                                    </td>
+                                    <td>
+                                        <p>On Android, applications must request the ACCESS_COARSE_LOCATION or ACCESS_FINE_LOCATION permission to access the device's physical location. Extra scrutiny could be given to applications that request these permissions. On iOS, calls to the relevant APIs could be detected during the vetting process.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1463">T1463</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1463">Manipulate Device Communication</a>   
+                                    </td>
+                                    <td>
+                                        <p>Application vetting techniques can scan for use of cleartext communication, insecure TrustManager implementations, and other potential network communication weaknesses. The Google Play Store now automatically assesses submitted applications for insecure TrustManager implementations.<span onclick=scrollToRef('scite-5') id="scite-ref-5-a" class="scite-citeref-number" data-reference="Google-TrustManager"><sup><a href="https://support.google.com/faqs/answer/6346016?hl=en" target="_blank" data-hasqtip="4" aria-describedby="qtip-4">[5]</a></sup></span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1410">T1410</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1410">Network Traffic Capture or Redirection</a>   
+                                    </td>
+                                    <td>
+                                        <p>Closely scrutinize applications that request VPN access before allowing their use.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1406">T1406</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1406">Obfuscated Files or Information</a>   
+                                    </td>
+                                    <td>
+                                        <p>Application vetting techniques may be able to alert to the presence of obfuscated or encrypted code in applications, and such applications could have extra scrutiny applied. Unfortunately, this mitigation is likely impractical, as many legitimate applications apply code obfuscation or encryption to resist adversary techniques such as Repackaged Application. Dynamic analysis when used in application vetting may in some cases be able to identify malicious code in obfuscated or encrypted form by detecting the code at execution time (after it is deobfuscated or decrypted). Some application vetting techniques apply reputation analysis of the application developer and can alert to potentially suspicious applications without actual examination of application code.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1448">T1448</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1448">Premium SMS Toll Fraud</a>   
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1424">T1424</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1424">Process Discovery</a>   
+                                    </td>
+                                    <td>
+                                        <p>Application vetting techniques could be used to attempt to identify applications with this behavior.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1513">T1513</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1513">Screen Capture</a>   
+                                    </td>
+                                    <td>
+                                        <p>Applications can be vetted for their use of the Android MediaProjectionManager class, with extra scrutiny applied to any application that uses the class.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1426">T1426</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1426">System Information Discovery</a>   
+                                    </td>
+                                    <td>
+                                        <p>App vetting procedures can search for apps that use the android.os.Build class, but these procedures could potentially be evaded and are likely not practical in this case, as many apps are likely to use this functionality as part of their legitimate behavior.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1422">T1422</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1422">System Network Configuration Discovery</a>   
+                                    </td>
+                                    <td>
+                                        <p>Application vetting could be used to analyze applications to determine whether they access this information, including determining whether the application requests the Android ACCESS_NETWORK_STATE permission (required in order to access NetworkInterface information) or the READ_PHONE_STATE permission (required in order to access TelephonyManager information).</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1421">T1421</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1421">System Network Connections Discovery</a>   
+                                    </td>
+                                    <td>
+                                        <p>During application vetting, applications could be examined to see if they have this behavior, and extra scrutiny could potentially be given to applications that do.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1509">T1509</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1509">Uncommonly Used Port</a>   
+                                    </td>
+                                    <td>
+                                        <p>Application vetting reports may show network communications performed by the application, including hosts, ports, protocols, and URLs.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1415">T1415</a>                     
+                                    </td>
+                                    <td>
+                                        <a href="https://apowers313.github.io/generic-attack/techniques/T1415">URL Scheme Hijacking</a>   
+                                    </td>
+                                    <td>
+                                        <p>Check for potential malicious definitions of URL schemes when vetting applications. Also, when examining apps for potential vulnerabilities, encourage use of universal links as an alternative to URL schemes. When examining apps that use OAuth, encourage use of best practices.<span onclick=scrollToRef('scite-2') id="scite-ref-2-a" class="scite-citeref-number" data-reference="Apple-UniversalLinks"><sup><a href="https://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/UniversalLinks.html" target="_blank" data-hasqtip="1" aria-describedby="qtip-1">[2]</a></sup></span><span onclick=scrollToRef('scite-3') id="scite-ref-3-a" class="scite-citeref-number" data-reference="IETF-OAuthNativeApps"><sup><a href="https://tools.ietf.org/html/rfc8252" target="_blank" data-hasqtip="2" aria-describedby="qtip-2">[3]</a></sup></span></p>
+                                    </td>
+                                </tr>
+                        </tbody>
+                    </table>
+
+                    <h2 class="pt-3" id="references">References</h2>
+
+                    <div class="row">
+                        <div class="col">
+                            <ol>
+                                        <li>
+                                            <span  id="scite-1" class="scite-citation">
+                                                <span class="scite-citation-text">
+                                                    <a rel="nofollow" class="external text" name="scite-1" href="https://apowers313.github.io/generic-attackhttps://www.blackhat.com/docs/eu-16/materials/eu-16-Maggi-Pocket-Sized-Badness-Why-Ransomware-Comes-As-A-Plot-Twist-In-The-Cat-Mouse-Game.pdf" target="_blank">
+                                                        Federico Maggi and Stefano Zanero. (2016). Pocket-Sized Badness - Why Ransomware Comes as a Plot Twist in the Cat-Mouse Game. Retrieved December 21, 2016.
+                                                    </a>
+                                                </span>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span  id="scite-2" class="scite-citation">
+                                                <span class="scite-citation-text">
+                                                    <a rel="nofollow" class="external text" name="scite-2" href="https://apowers313.github.io/generic-attackhttps://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/UniversalLinks.html" target="_blank">
+                                                        Apple. (n.d.). Support Universal Links. Retrieved December 21, 2016.
+                                                    </a>
+                                                </span>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span  id="scite-3" class="scite-citation">
+                                                <span class="scite-citation-text">
+                                                    <a rel="nofollow" class="external text" name="scite-3" href="https://apowers313.github.io/generic-attackhttps://tools.ietf.org/html/rfc8252" target="_blank">
+                                                        W. Denniss and J. Bradley. (2017, October). IETF RFC 8252: OAuth 2.0 for Native Apps. Retrieved November 30, 2018.
+                                                    </a>
+                                                </span>
+                                            </span>
+                                        </li>
+                            </ol>
+                        </div>
+                        <div class="col">
+                                <ol start="4.0">
+                                            <li>
+                                                <span  id="scite-4" class="scite-citation">
+                                                    <span class="scite-citation-text">
+                                                        <a rel="nofollow" class="external text" name="scite-4" href="https://apowers313.github.io/generic-attackhttps://developer.android.com/training/app-links/index.html" target="_blank">
+                                                            Android. (n.d.). Handling App Links. Retrieved December 21, 2016.
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span  id="scite-5" class="scite-citation">
+                                                    <span class="scite-citation-text">
+                                                        <a rel="nofollow" class="external text" name="scite-5" href="https://apowers313.github.io/generic-attackhttps://support.google.com/faqs/answer/6346016?hl=en" target="_blank">
+                                                            Google. (n.d.). How to fix apps containing an unsafe implementation of TrustManager. Retrieved December 24, 2016.
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </li>
+ 
+                                </ol> 
+                        </div>             
+                    </div>
+  
+            </div>
+        </div>
+    </div>
+
+                </div>
+            </div>
+        </div>  
+    </div>
+</div>
+<!--stopindex-->
+<footer class="footer p-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 col-sm-4 col-md-3">  
+                <div class="footer-center-responsive my-auto">
+                    <a href="https://www.mitre.org" target="_blank" rel="noopener" aria-label="MITRE">
+                        <img src="https://apowers313.github.io/generic-attack/theme/images/attackwhiteontrans.gif" class="mitre-logo-wtrans">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2 col-sm-2 footer-responsive-break"></div>
+            <div class="col-6 col-sm-6 text-center">  
+                <p>
+                    blah blah copyright blah.
+                </p>
+                <div class="row">
+                    <div class="col text-right">
+                        <small>
+                            <a href="https://apowers313.github.io/generic-attack/resources/privacy" class="footer-link">Privacy Policy</a>
+                        </small>
+                    </div>
+                    <div class="col text-left">
+                        <small>
+                            <a href="https://apowers313.github.io/generic-attack/resources/terms-of-use" class="footer-link">Terms of Use</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 p-2 footer-responsive-break"></div>
+            <div class="col">
+                <div class="footer-float-right-responsive">
+                    <div class="mb-1">
+                        <a href="https://twitter.com/MITREattack" class="btn btn-primary w-100">
+                            <!-- <i class="fa fa-twitter"></i> -->
+                            <b>BUTTON!</b>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="https://apowers313.github.io/generic-attack/contact" class="btn btn-primary w-100">
+                            <b>BUTTON 2!</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+        <!--SCRIPTS-->
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/jquery-3.2.1.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/popper.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/bootstrap.min.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/site.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/lunr-2.3.3.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/search.js"></script>
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/index.js"></script>
+
+    <!--SCRIPTS-->
+    <script src="https://apowers313.github.io/generic-attack/theme/scripts/navigation.js"></script>
+</body>
+
+</html>
+<!--startindex-->
